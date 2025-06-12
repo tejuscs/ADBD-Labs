@@ -24,7 +24,7 @@ As an OCI account administrator with network resource privileges:
 - Since this is the starting point to building your dedicated autonomous database platform, an admin account is recommended.
 
 ## Task 1: Create compartments, groups, users and IAM policies
-For separation of duties Oracle recommends a fleet administrator provision the exadata infrastucture, VM Clusters and container databases while the database users simply become consumers of these resources and provision their databases on it.
+For separation of duties Oracle recommends a fleet administrator provision the Exadata Infrastucture, VM Clusters and Container Databases while the database users simply become consumers of these resources and provision their databases on it.
 
 We will use the following IAM structure in line with the bare minimum isolation recommended:
 
@@ -96,7 +96,7 @@ We will use the following IAM structure in line with the bare minimum isolation 
 5. And finally, let's create a fleet admin and a database user and add them to their respective groups. Any additional fleet admins or database users will simply need to be added to their groups and they will automatically assume their group privileges.
 
     ![This image shows the result of performing the above step for creating dbuser1](./images/dbuser1.png " ")
-    
+
     ![This image shows the result of performing the above step for creating adduserTogroup1](./images/addusertogroup1.png " ")
 
 You now have the users, groups and compartments setup to provision an autonomous database platform.
