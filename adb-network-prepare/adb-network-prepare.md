@@ -39,13 +39,13 @@ We will use the following IAM structure in line with the bare minimum isolation 
 
     ![This image shows the result of performing the above step for creating the fleetComparment.](./images/create-compartment.png " ")
 
-    ![This image shows the result of performing the above step for creating the dbUserCompartment.](./images/crt_comp_dbUserCmp.png " ")
+    ![This image shows the result of performing the above step for creating the dbUserCompartment.](./images/create-dbUserCmp.png " ")
 
 2. Next, create groups **fleetAdmins** and **dbUsers**. On the **Identity** page, click **Domains** and then select the domain that you're using. On the **Domain** page, click **User management** and navigate to the **Groups** section. For each group that you're creating, click **Create group** and enter a name and description of the group. Then click **Create**.
 
     ![This image shows the result of performing the above step for creating groups](./images/create-groups.png " ")
-    ![This image shows the result of performing the above step for creating fleetadmin group](./images/crt_grp_fleetadmins.png " ")
-    ![This image shows the result of performing the above step for creating dbUsers group](./images/crt_grp_dbusers.png " ")
+    ![This image shows the result of performing the above step for creating fleetadmin group](./images/create-grp-fleetadmins.png " ")
+    ![This image shows the result of performing the above step for creating dbUsers group](./images/create-grp-dbusers.png " ")
 
 3. Now, add the required IAM policies on the compartments that we have created. Navigate to the **Policies** page and click **Create Policy**. Enter the required information and click **Create**.
 
@@ -70,7 +70,7 @@ We will use the following IAM structure in line with the bare minimum isolation 
     Allow group dbUsers to READ autonomous-container-databases in compartment fleetCompartment
     </copy>
     ````
-   ![This image shows the result of performing the above step for creating the fleetAdminpolicy](./images/crt_fleetadminpolicy.png " ")
+   ![This image shows the result of performing the above step for creating the fleetAdminpolicy](./images/create-fleetadminpolicy.png " ")
 
 
 4. Similarly, create a **dbUserPolicy** on the **dbUserCompartment** as shown. *Make sure you pick the right compartment before you click the 'Create Policy' button*.
@@ -93,7 +93,7 @@ We will use the following IAM structure in line with the bare minimum isolation 
 
     - You may alternatively choose to grant **MANAGE all-resources** privilege to users that need to provision databases and other cloud resources in their own private compartment as shown below.
 
-    ![This image shows the result of performing the above step for granting MANAGE all-resources.](./images/crt_dbUserpolicy.png " ")
+    ![This image shows the result of performing the above step for granting MANAGE all-resources.](./images/create-dbUserpolicy.png " ")
 
 5. Finally, let's create a fleet admin and a database user and add them to their respective groups. Navigate to the **Details** page of your domain and click **User management**. Under the **Users** section, click **Create** and fill out the required information for creating a new user.
 
@@ -101,9 +101,9 @@ We will use the following IAM structure in line with the bare minimum isolation 
 
     After creating the user, you can add them to a group by navigating to the **Details** page of the user and clicking **Groups**. Under the **Groups** section, click **Assign user to group**. Add the user to the required group and click **Assign user**.
 
-    ![This image shows the result of performing the above step for creating dbuser1](./images/crt_dbuser1.png " ")
+    ![This image shows the result of performing the above step for creating dbuser1](./images/create-dbuser1.png " ")
 
-    ![This image shows the result of performing the above step for creating adduserTogroup1](./images/assign_usertogroup.png " ")
+    ![This image shows the result of performing the above step for creating adduserTogroup1](./images/assign-usertogroup.png " ")
 
 You now have the users, groups and compartments setup to provision Autonomous Database resources.
 
@@ -131,7 +131,7 @@ For simplicity, only two subnets are being created here - a private subnet for e
 
 - Create a VCN in **fleetCompartment** with CIDR block 10.0.0.0/16 which provide for 64k IP addresses for the various subnets within this network. To create a VCN, navigate to the **Networking** section and click **Virtual Cloud Networks**. Then click **Create VCN**. On the **Create Virtual Cloud Network page**, fill out the required information and click **Create VCN**.
 
-    ![This image shows the result of performing the above step for creating a VCN.](./images/crt_ocivcn.png " ")
+    ![This image shows the result of performing the above step for creating a VCN.](./images/create-ocivcn.png " ")
 
    **Creating Security Lists:**
 
@@ -141,50 +141,53 @@ For simplicity, only two subnets are being created here - a private subnet for e
 
     ![This image shows the result of performing the above step.](./images/secrules.png " ")
 
-  We start with creating a security list **exasubnet-Seclist** for the exadata subnet based on rules defined in the table above.
-    ![This image shows the result of Ingress Rule 1.](./images/crt_seclist_1.png " ")
-    ![This image shows the result of Ingress Rule 2.](./images/crt_seclist_2.png " ")
-    ![This image shows the result of Ingress Rule 3.](./images/crt_seclist_3.png " ")
-    ![This image shows the result of Ingress Rule 4.](./images/crt_seclist_4.png " ")
-    ![This image shows the result of Ingress Rule 5.](./images/crt_seclist_5.png " ")
-    ![This image shows the result of Egress Rule 1.](./images/crt_seclist_6.png " ")
+  We start with creating a security list **exaSubnet-seclist** for the exadata subnet based on rules defined in the table above.
+    ![This image shows the result of Ingress Rule 1.](./images/create-seclist-1.png " ")
+    ![This image shows the result of Ingress Rule 2.](./images/create-seclist-2.png " ")
+    ![This image shows the result of Ingress Rule 3.](./images/create-seclist-3.png " ")
+    ![This image shows the result of Ingress Rule 4.](./images/create-seclist-4.png " ")
+    ![This image shows the result of Ingress Rule 5.](./images/create-seclist-5.png " ")
+    ![This image shows the result of Egress Rule 1.](./images/create-seclist-6.png " ")
 
-  You have now completed creating the **exasubnet-Seclist** security list. In the same way create another security list **appsubnet-Seclist** for the application subnet using the rules defined in the table above. Once again, since this is a two tier configuration, we will host VPN servers, Application servers, compute instances for VNC, and more in this subnet and therefore, suitable ports needs to be open to internet traffic.
+  You have now completed creating the **exaSubnet-seclist** security list. In the same way create another security list **appSubnet-seclist** for the application subnet using the rules defined in the table above. Once again, since this is a two tier configuration, we will host VPN servers, Application servers, compute instances for VNC, and more in this subnet and therefore, suitable ports needs to be open to internet traffic.
 
   Alternatively, you may host internet facing resources in a separate subnet and set up security lists accordingly. Consult your network administrator for deploying this in line with your corporate best practices.
 
   **Create an internet gateway:**
+
   Instances in the application subnet may need access to the internet. For that purpose we will deploy an internet gateway in the VCN and create a route to it. This is optional and depends on whether you want any hosts in the public domain. Typically bastion hosts can be setup in a public subnet for ssh access. In this guide, for simplicity, we will set up our developer client machines in the public appSubnet.
 
   On the **Details** page for your VCN, click the **Gateways** tab. Under the **Internet Gateways** section, click **Create Internet Gateway**. Fill out the required information and click **Create Internet Gateway**.
-    ![create-internet-gateway](./images/crt_internetgateway.png " ")
+    ![create-internet-gateway](./images/create-internetgateway.png " ")
 
-  **Route Table:**
-   Create a route table for the Application Subnet to route traffic to the internet gateway. On the **Details** page for your VCN, click the **Routing** tab. Under the **Route Tables** section, click **Create Route Table**. Fill out the required information and click **Create Internet Gateway**.
+  **Create a Route Table:**
+
+   You need to create a route table for the Application Subnet to route traffic to the internet gateway. On the **Details** page for your VCN, click the **Routing** tab. Under the **Route Tables** section, click **Create Route Table**. Fill out the required information and click **Create Internet Gateway**.
 
   Note the destination CIDR block 0.0.0.0/0 indicate ALL IP addresses globally, that is, to any host anywhere on the internet. You can limit it to specific hosts or network as desired. For example, you can limit it to hosts in your corporate network or to a specific host such as your personal laptop as long as it has a unique public IP address.
 
-    ![This image shows the result of performing the above step.](./images/crt_routetable.png " ")
+    ![This image shows the result of performing the above step.](./images/create-routetable.png " ")
 
   Similarly, create a route table for the Exadata Subnet. Since a route table is required when creating a subnet, we simply create a blank route table named **exaSubnet-routeTable** without any route rules.
 
-    ![This image shows the result of performing the above step.](./images/crt_empty_routetable.png " ")
+    ![This image shows the result of performing the above step.](./images/create-empty-routetable.png " ")
 
   **Provision the subnets:**
-  Provision **exadataSubnet** and **appSubnet**. On the **Details** page for your VCN, click the **Subnets** tab. Under the **Subnets** section, click **Create Subnet**. Fill out the required information and click **Create Subnet**.
+
+  Let us provision two subnets, **exadataSubnet** and **appSubnet**. On the **Details** page for your VCN, click the **Subnets** tab. Under the **Subnets** section, click **Create Subnet**. Fill out the required information and click **Create Subnet**.
 
   Now that we have build all the required network resources, we are ready to deploy the exadata and application subnets. Start by provisioning the exadataSubnet with CIDR 10.0.0.0/24 as shown below. The default route table associated with the exadataSubnet does not have any route rules.
 
-    ![This image shows the result of performing the above step.](./images/crt_exadata_subnet_1.png " ")
-    ![This image shows the result of performing the above step.](./images/crt_exadata_subnet_2.png " ")
-    ![This image shows the result of performing the above step.](./images/crt_exadata_subnet_3.png " ")
-    ![This image shows the result of performing the above step.](./images/crt_exadata_subnet_4.png " ")
+    ![This image shows the result of performing the above step.](./images/create-exadata-subnet-1.png " ")
+    ![This image shows the result of performing the above step.](./images/create-exadata-subnet-2.png " ")
+    ![This image shows the result of performing the above step.](./images/create-exadata-subnet-3.png " ")
+    ![This image shows the result of performing the above step.](./images/create-exadata-subnet-4.png " ")
 
   Next, provision the application subnet with CIDR 10.0.1.0/24. Note that we associate our custom route table to this subnet for internet access.
-    ![This image shows the result of performing the above step.](./images/crt_app_subnet_1.png " ")
-    ![This image shows the result of performing the above step.](./images/crt_app_subnet_2.png " ")
-    ![This image shows the result of performing the above step.](./images/crt_app_subnet_3.png " ")
-    ![This image shows the result of performing the above step.](./images/crt_app_subnet_4.png " ")
+    ![This image shows the result of performing the above step.](./images/create-app-subnet-1.png " ")
+    ![This image shows the result of performing the above step.](./images/create-app-subnet-2.png " ")
+    ![This image shows the result of performing the above step.](./images/create-app-subnet-3.png " ")
+    ![This image shows the result of performing the above step.](./images/create-app-subnet-4.png " ")
 
 Your network setup is now complete.
 
