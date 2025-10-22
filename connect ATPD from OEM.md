@@ -1,7 +1,7 @@
-# Connecting to Autonomous Transaction Processing Dedicated from Oracle Enterprise Manager
+# Connecting to Autonomous AI Transaction Processing Dedicated from Oracle Enterprise Manager
 
 ## Introduction
-The Oracle Cloud Infrastructure marketplace provides a pre-built image with necessary client tools and drivers to deploy compute instances and connect to Autonomous Transaction Processing Dedicated . A database administrator can now connect to ATPD from Oracle Enterprise Manager and monitor the performance. 
+The Oracle Cloud Infrastructure marketplace provides a pre-built image with necessary client tools and drivers to deploy compute instances and connect to Autonomous AI Transaction Processing Dedicated . A database administrator can now connect to ATPD from Oracle Enterprise Manager and monitor the performance. 
 
 The image is pre-configured and installed with Oracle Enterprise manager.
 For a complete list of features, login to your OCI account, select 'Marketplace' from the top left menu and browse details on the 'Enterprise Manager 13c Workshop v3.0'.
@@ -18,7 +18,7 @@ As a Database Administrator,
 ### Required Artifacts
 
    - An Oracle Cloud Infrastructure account.
-   - A pre-provisioned dedicated autonomous database instance. Refer to [Lab 7](?lab=lab-7-provisioning-databases).
+   - A pre-provisioned dedicated Autonomous AI Database instance. Refer to [Lab 7](?lab=lab-7-provisioning-databases).
    - A pre-provisioned compute instace of Image type "Enterprise Manager 13c Workshop v3.0"
 
 
@@ -56,10 +56,10 @@ As a Database Administrator,
 
 ## STEP 3: Transfer database wallet to developer client
 
-- Login to Oracle Cloud Infrastructure account and select *Autonomous Transaction Processing* from menu.
+- Login to Oracle Cloud Infrastructure account and select *Autonomous AI Transaction Processing* from menu.
     ![](./images/atpd1.png " ")
 
-- Click on Autonomous Database and select your previously created database.
+- Click on Autonomous AI Database and select your previously created database.
     ![](./images/atpd2.png " ")
 
 - Click on DB Connection and under Download Client Credential(Wallet) click *Download*.
@@ -70,7 +70,7 @@ As a Database Administrator,
 
     The credentials zip file contains the encryption wallet, Java keystore and other relevant files to make a secure TLS 1.2 connection to your database from client applications. Store this file in a secure location.
 	
-## STEP 4: Add Autonomous Transaction Processing Database dedicated as Target in OEM
+## STEP 4: Add Autonomous AI Transaction Processing Database dedicated as Target in OEM
 
 - Click "Setup" and select "Add Target" and click on "Add Targets Manually".
     ![](./images/atpd1.png " ")
@@ -81,7 +81,7 @@ As a Database Administrator,
 - Search the host name and select as "emcc.marketplace.com".
     ![](./images/atpd3.png " ")
 
-- Select Target Type as "Autonomous Transaction Processing" and click on "Add..". 
+- Select Target Type as "Autonomous AI Transaction Processing" and click on "Add..". 
     ![](./images/atpd4.png " ")
 
 - Give the Target Name as "ADBEM" (Target name can be anything of your desire)
@@ -108,13 +108,13 @@ As a Database Administrator,
 - Click on "Targets" select "All Targets"
 	![](./images/atpd9.png " ")
 	
-- Under Databases select "Autonomous Transaction Processing" 
+- Under Databases select "Autonomous AI Transaction Processing" 
 	![](./images/atpd10.png " ")
 	
 - ADBEM will be present under Target Name
 
 ## Acknowledgements
 
-*Congratulations! You have successfully established connection to Autonomous Transaction Processing Dedicated Database from OEM .*
+*Congratulations! You have successfully established connection to Autonomous AI Transaction Processing Dedicated Database from OEM .*
 
 - **Authors** - Navya M S & Padma Priya Natarajan

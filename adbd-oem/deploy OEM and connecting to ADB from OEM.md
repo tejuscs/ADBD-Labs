@@ -1,7 +1,7 @@
-# Connecting to Autonomous Transaction Processing Dedicated from Oracle Enterprise Manager
+# Connecting to Autonomous AI Transaction Processing Dedicated from Oracle Enterprise Manager
 
 ## Introduction
-The Oracle Cloud Infrastructure marketplace provides a pre-built image with necessary client tools and drivers to deploy compute instances and connect to Autonomous Transaction Processing Dedicated . A database administrator can now connect to ATPD from Oracle Enterprise Manager and monitor the performance. 
+The Oracle Cloud Infrastructure marketplace provides a pre-built image with necessary client tools and drivers to deploy compute instances and connect to Autonomous AI Transaction Processing Dedicated . A database administrator can now connect to ATPD from Oracle Enterprise Manager and monitor the performance. 
 
 The image is pre-configured and installed with Oracle Enterprise manager.
 For a complete list of features, login to your OCI account, select *Marketplace* --> *All Applications* from the top left menu and browse details on the *Oracle Enterprise Manager* Version 13.4.
@@ -20,7 +20,7 @@ As a Database Administrator,
 ### Required Artifacts
 
    - An Oracle Cloud Infrastructure account.
-   - A pre-provisioned dedicated autonomous database instance. Refer to the *Provisioning Databases* lab in the *Introduction to ADB Dedicated for Developers and Database Users* workshop.
+   - A pre-provisioned dedicated Autonomous AI Database instance. Refer to the *Provisioning Databases* lab in the *Introduction to ADB Dedicated for Developers and Database Users* workshop.
    - A pre-provisioned compute instace of Image type *Enterprise Manager 13.4*.
 
 
@@ -68,10 +68,10 @@ As a Database Administrator,
 
 ## Task 3: Transfer database wallet to developer client
 
-- Login to Oracle Cloud Infrastructure account and select *Autonomous Transaction Processing* from menu.
+- Login to Oracle Cloud Infrastructure account and select *Autonomous AI Transaction Processing* from menu.
     ![This image shows the result of performing the above step.](./images/atpd1.png " ")
 
-- Click on *Autonomous Database* and select your previously created database.
+- Click on *Autonomous AI Database* and select your previously created database.
     ![This image shows the result of performing the above step.](./images/atpd2.png " ")
 
 - Click on *DB Connection* and under *Download Client Credential(Wallet)* click *Download*.
@@ -82,7 +82,7 @@ As a Database Administrator,
 
     The credentials zip file contains the encryption wallet, Java keystore and other relevant files to make a secure TLS 1.2 connection to your database from client applications. Store this file in a secure location.
 	
-## Task 4: Add Autonomous Transaction Processing Database dedicated as Target in OEM
+## Task 4: Add Autonomous AI Transaction Processing Database dedicated as Target in OEM
 
 - Click *Setup* and select *Add Target* and click on *Add Targets Manually*.
     ![This image shows the result of performing the above step.](./images/atpd5.png " ")
@@ -95,7 +95,7 @@ As a Database Administrator,
     
     ![This image shows the result of performing the above step.](./images/atpd8.png " ")
 
-- Select Target Type as *Autonomous Transaction Processing* and click on "Add..". 
+- Select Target Type as *Autonomous AI Transaction Processing* and click on "Add..". 
     ![This image shows the result of performing the above step.](./images/atpd9.png " ")
 
 - Give the Target Name as *ADBEM* (Target name can be anything of your desire)
@@ -126,7 +126,7 @@ As a Database Administrator,
 - Click on *Targets* select *All Targets*.
 	![This image shows the result of performing the above step.](./images/atpd16.png " ")
 	
-- Under *Databases* select *Autonomous Transaction Processing*.
+- Under *Databases* select *Autonomous AI Transaction Processing*.
 	![This image shows the result of performing the above step.](./images/atpd17.png " ")
 	
 	![This image shows the result of performing the above step.](./images/atpd18.png " ")
@@ -177,6 +177,6 @@ You may now **proceed to the next lab**.
 
 ## Acknowledgements
 
-*Congratulations! You have successfully established connection to Autonomous Transaction Processing Dedicated Database from OEM .*
+*Congratulations! You have successfully established connection to Autonomous AI Transaction Processing Dedicated Database from OEM .*
 
 - **Authors** - Navya M S & Padma Priya Natarajan

@@ -1,4 +1,4 @@
-# AWR Management of Autonomous Transaction Processing Dedicated database using Oracle Enterprise Manager
+# AWR Management of Autonomous AI Transaction Processing Dedicated database using Oracle Enterprise Manager
 
 ## Introduction
 Use Automatic Workload Repository (AWR) and automate database statistics gathering by collecting, processing, and maintaining performance statistics for database problem detection and self-tuning purposes.
@@ -18,7 +18,7 @@ As a Database Administrator:
 ### Required Artifacts
 
    - An Oracle Cloud Infrastructure account.
-   - A pre-provisioned dedicated autonomous database instance. Refer to the **Provisioning Databases** lab in the **Introduction to ADB Dedicated for Developers and Database Users** workshop.
+   - A pre-provisioned dedicated Autonomous AI Database instance. Refer to the **Provisioning Databases** lab in the **Introduction to ADB Dedicated for Developers and Database Users** workshop.
    - Successful connection of ATP dedicated database from OEM.
 
 ## Task 1: Generate AWR report for ATP dedicated database from OEM
@@ -31,7 +31,7 @@ As a Database Administrator:
 
     ![This image shows the result of performing the above step.](./images/us1-2.png " ")
 
-- Click **Autonomous Transaction Processing** and select **ADBEM** (name of your ATP database).
+- Click **Autonomous AI Transaction Processing** and select **ADBEM** (name of your ATP database).
 
     ![This image shows the result of performing the above step.](./images/us1-3.png " ")
 

@@ -1,7 +1,7 @@
 # Protect your data with Database Vault
 
 ## Introduction
-Managed database services run the risk of 'Admin snooping', allowing privileged users access to customer data. Oracle Autonomous Database provides powerful security controls within your dedicated database, restricting access to application data by privileged database users, reducing the risk of insider and outsider threats and addressing common compliance requirements.
+Managed database services run the risk of 'Admin snooping', allowing privileged users access to customer data. Oracle Autonomous AI Database provides powerful security controls within your dedicated database, restricting access to application data by privileged database users, reducing the risk of insider and outsider threats and addressing common compliance requirements.
 
 You can deploy controls to block privileged account access to application data and control sensitive operations inside the database. Trusted paths can be used to add additional security controls to authorized data access and database changes. Through the runtime analysis of privileges and roles, you can increase the security of existing applications by implementing least privileges and reducing the attack profile of your database accounts. IP addresses, usernames, client program names and other factors can be used as part of Oracle Database Vault security controls to increase security. Oracle Database Vault secures existing database environments transparently, eliminating costly and time consuming application changes.**
 
@@ -20,10 +20,10 @@ As a database security admin:
 ### Required Artifacts
 - An Oracle Cloud Infrastructure account.
 - A pre-provisioned instance of Oracle Developer Client image in an application subnet. Refer to the lab **Configure a Development System** in the workshop **Introduction to ADB Dedicated for Developers and Database Users**.
-- A pre-provisioned Autonomous Transaction Processing instance. Refer to the lab **Provisioning Databases** in the workshop **Introduction to ADB Dedicated for Developers and Database Users**.
+- A pre-provisioned Autonomous AI Transaction Processing instance. Refer to the lab **Provisioning Databases** in the workshop **Introduction to ADB Dedicated for Developers and Database Users**.
 
 ## Task 1: Set up Application Schema and Users
-Oracle Database Vault comes pre-installed with your Autonomous database on dedicated infrastructure. In this lab, we will enable Database Vault (DV), add required user accounts, and create a DV realm to secure a set of user tables from privileged user access.
+Oracle Database Vault comes pre-installed with your Autonomous AI Database on dedicated infrastructure. In this lab, we will enable Database Vault (DV), add required user accounts, and create a DV realm to secure a set of user tables from privileged user access.
 
 Our implementation scenario looks as follows:
 
@@ -35,7 +35,7 @@ The table should however be available to the application user (app). Note that w
 
 Let's start by creating the HR schema and the app user account.
 
-- Connect to your dedicated autonomous database instance as user 'admin' and run the following commands to build the 'HR' schema:
+- Connect to your dedicated Autonomous AI Database instance as user 'admin' and run the following commands to build the 'HR' schema:
 
     ````
     <copy>
@@ -151,7 +151,7 @@ As Database Vault Owner, execute the following PL/SQL statements:
    ![This image shows the result of performing the above step.](./images/realm2.png " ")
 
 ## Task 4: Create audit policy to capture realm violations
-You may also want to capture an audit trail of unauthorized access attempts to your realm objects. Since the Autonomous Database includes Unified Auditing, we will create a policy to audit database vault activities. For more information on Unified Auditing, refer to the [Database Security Guide](https://docs.oracle.com/en/database/oracle/oracle-database/19/dbseg/introduction-to-auditing.html).
+You may also want to capture an audit trail of unauthorized access attempts to your realm objects. Since the Autonomous AI Database includes Unified Auditing, we will create a policy to audit database vault activities. For more information on Unified Auditing, refer to the [Database Security Guide](https://docs.oracle.com/en/database/oracle/oracle-database/19/dbseg/introduction-to-auditing.html).
 
 - Create an audit policy to capture realm violations.
 
@@ -190,7 +190,7 @@ You may also want to capture an audit trail of unauthorized access attempts to y
 
 - You can see the access attempts from HR and Admin.
 
-- That is it! You have successfully enabled and used database vault in your autonomous database. If you'd like to reset your database to its original state, follow the steps below.
+- That is it! You have successfully enabled and used database vault in your Autonomous AI Database. If you'd like to reset your database to its original state, follow the steps below.
 
 - To remove the components created for this lab and reset the database back to the original configuration, as Database Vault owner, execute:
 
@@ -208,7 +208,7 @@ You may also want to capture an audit trail of unauthorized access attempts to y
 You may now **proceed to the next lab**.
 
 ## Acknowledgements
-*Congratulations! You successfully learned to use database vault in your autonomous database.*
+*Congratulations! You successfully learned to use database vault in your Autonomous AI Database.*
 
 - **Author** - Tejus S. & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer

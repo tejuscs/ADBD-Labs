@@ -1,7 +1,7 @@
 # Configure SCAN Listener port and Bring your own certificates
 
 ## Introduction
-This lab introduces the functionality to configure SCAN Listener port for Non-TLS and TLS, choose between TLS and mTLS for Autonomous Database and bring or rotate your own TLS and ORDS certificates with Autonomous Exadata VM Cluster on Exadata Cloud@Customer.
+This lab introduces the functionality to configure SCAN Listener port for Non-TLS and TLS, choose between TLS and mTLS for Autonomous AI Database and bring or rotate your own TLS and ORDS certificates with Autonomous Exadata VM Cluster on Exadata Cloud@Customer.
 
 While provisioning an Autonomous Exadata VM Cluster on Exadata Cloud@Customer, you can now customize SCAN Listener port for TLS and NON-TLS. You can also choose to authenticate between one-way TLS or mutual TLS. This will allow you to provide a higher level of security for your application connections.
 
@@ -94,7 +94,7 @@ You can now manage database listener TLS certificates and ORDS TLS certificates 
 *Congratulations! You successfully configured the SCAN listener port for TLS and Non-TLS and enabled mutual TLS for Autonomous Exadata VM Cluster and used customer provided certificates*
 
 - **Author** - Tejus S
-- **Last Updated By/Date** -  Tejus S, Autonomous Database Product Management, April 2023
+- **Last Updated By/Date** -  Tejus S, Autonomous AI Database Product Management, April 2023
 
 ## See an issue or have feedback?  
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!

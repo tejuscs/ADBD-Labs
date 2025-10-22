@@ -1,7 +1,7 @@
 # Recover from user errors using flashback recovery
 
 ## Introduction
-The Oracle Autonomous Database service comes pre-configured with a set of features collectively known as Flashback Technology that supports viewing past states of data, and winding and rewinding data back and forth in time, without requiring the restore of the database from backup. Depending on the changes to your database, Flashback Technology can often reverse the unwanted changes more quickly and with less impact on database availability.
+The Oracle Autonomous AI Database service comes pre-configured with a set of features collectively known as Flashback Technology that supports viewing past states of data, and winding and rewinding data back and forth in time, without requiring the restore of the database from backup. Depending on the changes to your database, Flashback Technology can often reverse the unwanted changes more quickly and with less impact on database availability.
 
 Estimated Time: 20 minutes
 
@@ -13,7 +13,7 @@ As an administrator,
 ### Required Artifacts
 - An Oracle Cloud Infrastructure account.
 - A pre-provisioned instance of Oracle Developer Client image in an application subnet. Refer to the earlier lab, **Configuring a Development System**.
-- A pre-provisioned Autonomous Transaction Processing instance. Refer to the earlier lab, **Provisioning Databases**.
+- A pre-provisioned Autonomous AI Transaction Processing instance. Refer to the earlier lab, **Provisioning Databases**.
 
 ## Task 1: Log in to the Oracle Cloud Developer image and invoke SQL Developer
 - To connect to your Oracle Cloud Developer image please refer to the earlier lab, **Configuring a Development System**. If  you are already connected from the previous lab skip to *Task 2*.  
@@ -22,12 +22,12 @@ As an administrator,
 
 - Connect to your developer client machine over VNC and invoke SQL Developer. Refer to the earlier lab, **Configuring a Development System** for detailed instructions.
 
-- Next, open a connection to your dedicated autonomous database instance. Once again, refer to the earlier lab, **Configuring a Development System** if you do not know how to do that. Alternatively, you may also use SQLcl or SQL*Plus clients for this lab, but screenshots here are based on SQL Developer.
+- Next, open a connection to your dedicated Autonomous AI Database instance. Once again, refer to the earlier lab, **Configuring a Development System** if you do not know how to do that. Alternatively, you may also use SQLcl or SQL*Plus clients for this lab, but screenshots here are based on SQL Developer.
 
 ## Task 2: Recover from erroneous transactions
 Let's first see how to recover from an accidental data loss.
 
-- In SQL Developer worksheet, let's first make sure the database is in ARCHIVELOG mode. An autonomous database is always created in ARCHIVELOG mode.
+- In SQL Developer worksheet, let's first make sure the database is in ARCHIVELOG mode. An Autonomous AI Database is always created in ARCHIVELOG mode.
 
     ````
     <copy>
@@ -120,7 +120,7 @@ You may now **proceed to the next lab**.
 
 - **Author** - Tejus Subrahmanya & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer
-- **Last Updated By/Date** - Kris Bhanushali, Autonomous Database Product Management, March 2022
+- **Last Updated By/Date** - Kris Bhanushali, Autonomous AI Database Product Management, March 2022
 
 ## See an issue or have feedback?  
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!

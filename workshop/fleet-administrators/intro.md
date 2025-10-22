@@ -1,22 +1,22 @@
 # Workshop Introduction and Overview
 
-## Introduction to Oracle Autonomous Database Dedicated for Fleet Administrators
-Oracle's Dedicated Autonomous Database service allows organizations to Rethink Database IT, enabling a customizable private database cloud in the public cloud. The dedicated choice makes it possible to deliver a self-service database capability that aligns with organizational structure. Different lines of business or project teams can have complete autonomy in their individual execution while the company itself gets a fleet wide simplified aggregation of overall health, availability and cost management. This separation of Fleet vs Database administration allows simple budgeting controls and resource isolation without getting in the way of the line of business execution. And a dedicated database deployment will support the entire spectrum of needs from simple apps to apps that require the highest governance, consistent performance and operational controls.
+## Introduction to Oracle Autonomous AI Database Dedicated for Fleet Administrators
+Oracle's Dedicated Autonomous AI Database service allows organizations to Rethink Database IT, enabling a customizable private database cloud in the public cloud. The dedicated choice makes it possible to deliver a self-service database capability that aligns with organizational structure. Different lines of business or project teams can have complete autonomy in their individual execution while the company itself gets a fleet wide simplified aggregation of overall health, availability and cost management. This separation of Fleet vs Database administration allows simple budgeting controls and resource isolation without getting in the way of the line of business execution. And a dedicated database deployment will support the entire spectrum of needs from simple apps to apps that require the highest governance, consistent performance and operational controls.
 
-The Oracle Autonomous database on dedicated infrastructure runs on the Exadata platform and is available both in OCI and in a customer's data center as a Cloud @ Customer offering.
+The Oracle Autonomous AI Database on dedicated infrastructure runs on the Exadata platform and is available both in OCI and in a customer's data center as a Cloud @ Customer offering.
 
-Watch the video below for an overview of Autonomous Database Dedicated.
+Watch the video below for an overview of Autonomous AI Database Dedicated.
 
 [](youtube:fOKSNzDz1pk)
 
 Estimated Workshop Time: 455 minutes
 
 ## Workshop Objectives
-This set of hands-on-labs is designed to assist **fleet administrators** with setting up and using various features of the **Autonomous Database on Dedicated Exadata Infrastructure Service**.
+This set of hands-on-labs is designed to assist **fleet administrators** with setting up and using various features of the **Autonomous AI Database on Dedicated Exadata Infrastructure Service**.
 
 
 ## Hands-on Lab Breakdown
-This is one of 3 workshops introducing the Autonomous Database on Dedicated Exadata Infrastructure Service. The workshops are designed for 3 job roles:
+This is one of 3 workshops introducing the Autonomous AI Database on Dedicated Exadata Infrastructure Service. The workshops are designed for 3 job roles:
 - **Fleet administrators (this workshop, the results of which are a prerequisite for the other 2 workshops)**
 - Developers and database users
 - Security administrators
@@ -45,8 +45,8 @@ Lab 13: Download AWR report from OEM
 Lab 14: Oracle Standard Tags
 Lab 15: Operator Access Control
 
-### *See our second Autonomous Database Dedicated workshop, Introduction to Oracle Autonomous Database Dedicated for Developers and Database Users*
-A Developer is the owner of an Autonomous Database (ADB) and is responsible for provisioning ADBs on-demand. Developers may also be interested in the performance of their database application. The following developer / ADB user focused labs address provisioning, application development, monitoring, tuning of ADBs as well as recovery from user errors.
+### *See our second Autonomous AI Database Dedicated workshop, Introduction to Oracle Autonomous AI Database Dedicated for Developers and Database Users*
+A Developer is the owner of an Autonomous AI Database (ADB) and is responsible for provisioning ADBs on-demand. Developers may also be interested in the performance of their database application. The following developer / ADB user focused labs address provisioning, application development, monitoring, tuning of ADBs as well as recovery from user errors.
 
 Lab 1: Provisioning Databases  
 Lab 2: Configuring a Development System  
@@ -63,7 +63,7 @@ Lab 12: Recover Errors Using Flashback Recovery
 Lab 13: Oracle Analytics Cloud  
 Lab 14: Automatic Indexing  
 
-### *See our third Autonomous Database Dedicated workshop, Introduction to Oracle Autonomous Database Dedicated for Security Administrators*
+### *See our third Autonomous AI Database Dedicated workshop, Introduction to Oracle Autonomous AI Database Dedicated for Security Administrators*
 A database security administrator is responsible for ensuring database environments are built with the right set of security controls and stay within corporate compliance requirements throughout their life-cycle. This function may be combined with the Fleet Admin function in many cases. Autonomous Dedicated is built with security at the forefront and automates most of the database security functions customers adhere to on-premises. The following labs address various database security aspects ranging from encryption key management, DB user security, auditing, sensitive data masking and privileged user access controls.
 
 Lab 1: Protect Data With Database Vault  
@@ -85,20 +85,20 @@ Lab 16: Custom Audit Policies Audit Data in Data Safe
 Lab 17: Customer Controlled Database Encryption Keys  
 
 ## A Private Database Cloud in the Oracle Public Cloud and on premises
-With Autonomous Database Dedicated, customers get their own Exadata infrastructure in the Oracle Cloud and on-premise. The customers administrator simply specifies the size, region and availability domain where they want their dedicated Exadata infrastructure provisioned.  They also get to determine the update or patching schedule if they wish. Oracle automatically manages all patching activity but with Autonomous Database Dedicated service, customers have the option to customize the patching schedule.
+With Autonomous AI Database Dedicated, customers get their own Exadata infrastructure in the Oracle Cloud and on-premise. The customers administrator simply specifies the size, region and availability domain where they want their dedicated Exadata infrastructure provisioned.  They also get to determine the update or patching schedule if they wish. Oracle automatically manages all patching activity but with Autonomous AI Database Dedicated service, customers have the option to customize the patching schedule.
 
 ## ADB Dedicated Architecture
-Autonomous Databases on dedicated Exadata infrastructure have a four-level database architecture model that makes use of Oracle multitenant database architecture.  You must create the dedicated Exadata infrastructure resources in the following order:
+Autonomous AI Databases on dedicated Exadata infrastructure have a four-level database architecture model that makes use of Oracle multitenant database architecture.  You must create the dedicated Exadata infrastructure resources in the following order:
 
 1. Exadata Infrastructure
 2. Autonomous VM Cluster
 3. Autonomous Container Database
-4. Autonomous Database
+4. Autonomous AI Database
 
 ### Autonomous Exadata Infrastructure
 This is a hardware rack which includes compute nodes and storage servers, tied together by a high-speed, low-latency InfiniBand network and intelligent Exadata software.
 
-**Customer's have a choice to deploy their Exadata Infrastructure in any OCI region or on-premise if they chose to run  Autonomous databases in their data center.**
+**Customer's have a choice to deploy their Exadata Infrastructure in any OCI region or on-premise if they chose to run  Autonomous AI Databases in their data center.**
 
 ### Autonomous VM Cluster
 An Autonomous VM Cluster is a set of symmetrical Virtual Machines across all Compute nodes. Autonomous Container and Database run all the VMs across all nodes enabling high availability. It consumes all the resources of the underlying Exadata Infrastructure.
@@ -106,13 +106,13 @@ An Autonomous VM Cluster is a set of symmetrical Virtual Machines across all Com
 ### Autonomous Container Database
 This resource provides a container for multiple user databases. This resource is sometimes referred to as a CDB, and is functionally equivalent to the multitenant container databases found in Oracle 12c and higher databases.
 
-### Autonomous Database
-You can create multiple Autonomous Databases within the same container database. This level of the database architecture is analogous to the pluggable databases (PDBs) found in non-Autonomous Exadata systems. Your Autonomous Database can be configured for either transaction processing or data warehouse workloads.
+### Autonomous AI Database
+You can create multiple Autonomous AI Databases within the same container database. This level of the database architecture is analogous to the pluggable databases (PDBs) found in non-Autonomous Exadata systems. Your Autonomous AI Database can be configured for either transaction processing or data warehouse workloads.
 
 Please proceed to the next lab.
 
 ## Acknowledgements
-- **Authors/Contributors** - Global Cloud Solution Hubs, Autonomous Database Product Management
+- **Authors/Contributors** - Global Cloud Solution Hubs, Autonomous AI Database Product Management
 - **Last Updated By/Date** - Kris Bhanushali and Rick Green, March 2022
 
 ## See an issue or have feedback?  

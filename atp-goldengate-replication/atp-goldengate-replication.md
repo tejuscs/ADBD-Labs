@@ -2,7 +2,7 @@
 # Live Migration to ATP-Dedicated Using Oracle GoldenGate Replication
 
 ## Introduction
-Data Replication is an essential part of your efforts and tasks when you are migrating your Oracle databases. While data migration can be achieved in many ways, there are fewer options when downtime tolerance is low and live, trickle feed replication may be the only way. Oracle Cloud Infrastructure Marketplace provides a GoldenGate microservice that can easily be set up for logical data replication between a variety of databases. In this hands-on lab, we will set up GoldenGate to replicate data from a 12.2 Oracle database comparable to an 'on-prem' source database to an ATP Dedicated database in OCI. This approach is recommended while migrating most production or business critical applications to Autonomous Database Dedicated.
+Data Replication is an essential part of your efforts and tasks when you are migrating your Oracle databases. While data migration can be achieved in many ways, there are fewer options when downtime tolerance is low and live, trickle feed replication may be the only way. Oracle Cloud Infrastructure Marketplace provides a GoldenGate microservice that can easily be set up for logical data replication between a variety of databases. In this hands-on lab, we will set up GoldenGate to replicate data from a 12.2 Oracle database comparable to an 'on-prem' source database to an ATP Dedicated database in OCI. This approach is recommended while migrating most production or business critical applications to Autonomous AI Database Dedicated.
 
 **Why GoldenGate?**
 
@@ -16,25 +16,25 @@ Estimated Time: 60 minutes
 
 ### Objectives
 
-1. Set up real time data replication from on-premise database to an Autonomous Transaction Processing-Dedicated database instance.
+1. Set up real time data replication from on-premise database to an Autonomous AI Transaction Processing-Dedicated database instance.
 
 ### Required Artifacts
 
 - Access to an Oracle Cloud Infrastructure tenancy.
 - Access to an Oracle 12c database configured as source database.
-- An Autonomous Transaction Processing-Dedicated instance as target database.
-- Access to Autonomous Transaction Processing-Dedicated network via jump server or VPN.
+- An Autonomous AI Transaction Processing-Dedicated instance as target database.
+- Access to Autonomous AI Transaction Processing-Dedicated network via jump server or VPN.
 - VNC Viewer or other suitable VNC client on your laptop.
 
 ### Background and Architecture
 
-- There are three components to this lab. The *source database* that you are planning to migrate to Autonomous, the *target autonomous database* in OCI and an instance of *Oracle GoldenGate* server with access to both source and target databases.
+- There are three components to this lab. The *source database* that you are planning to migrate to Autonomous, the *target Autonomous AI Database* in OCI and an instance of *Oracle GoldenGate* server with access to both source and target databases.
 
-- The source database can be any Oracle database version 11.2.0.4 or higher with at least one application schema that you wish to replicate to an autonomous database in OCI. For the purpose of this lab, you may provision a 12.2.0.1 DBCS instance in your compartment in OCI and configure it as source.
+- The source database can be any Oracle database version 11.2.0.4 or higher with at least one application schema that you wish to replicate to an Autonomous AI Database in OCI. For the purpose of this lab, you may provision a 12.2.0.1 DBCS instance in your compartment in OCI and configure it as source.
 
-- The ATP Dedicated database instance you provisioned can be used as a target database in this lab. Since this database is in a private network with no direct access over the internet, you need to either VPN into this network or set up a developer client / bastion host via which you can connect to your target Autonomous Transaction Processing-Dedicated instance using SQL*Plus or SQL Developer client.
+- The ATP Dedicated database instance you provisioned can be used as a target database in this lab. Since this database is in a private network with no direct access over the internet, you need to either VPN into this network or set up a developer client / bastion host via which you can connect to your target Autonomous AI Transaction Processing-Dedicated instance using SQL*Plus or SQL Developer client.
 
-    **Note:** You cannot complete this lab without setting up access to your Autonomous Transaction Processing-Dedicated instance. Therefore, set up a jump server or set up VPN (see the lab "Configure VPN Connectivity in your Exadata Network" earlier in this workshop.)
+    **Note:** You cannot complete this lab without setting up access to your Autonomous AI Transaction Processing-Dedicated instance. Therefore, set up a jump server or set up VPN (see the lab "Configure VPN Connectivity in your Exadata Network" earlier in this workshop.)
 
     - The GoldenGate software is going to be deployed on a linux server in a public network which has access to both the source database and the target database via the GoldenGate marketplace image in OCI.
 
@@ -60,7 +60,7 @@ Estimated Time: 60 minutes
     Make sure you check the **ASSIGN PUBLIC IP** checkbox. You will use this later to ssh into the instance and also connect to the GoldenGate admin console.
     ![This image shows the result of performing the above step.](./images/network2.png " ")
 
-- Next, under **Create OGG Deployment** check **Deployment - Autonomous Database**. Choose your deployment compartment and deployment Autonomous Database Instance.
+- Next, under **Create OGG Deployment** check **Deployment - Autonomous AI Database**. Choose your deployment compartment and deployment Autonomous AI Database Instance.
 
 - In this lab, we choose a single deployment called Databases.
     ![This image shows the result of performing the above step.](./images/source-target.png " ")

@@ -1,7 +1,7 @@
 # Autonomous Data Guard
 
 ## Introduction
-Autonomous Data Guard (AuDG) gives users the ability to create a standby database for an Autonomous Container Database (ACD) and all Autonomous Databases (ADB) built inside the ACD in just a few clicks.  As always in the Autonomous world - It is completely automated!
+Autonomous Data Guard (AuDG) gives users the ability to create a standby database for an Autonomous Container Database (ACD) and all Autonomous AI Databases (ADB) built inside the ACD in just a few clicks.  As always in the Autonomous world - It is completely automated!
 
 Estimated Time: 45 minutes
 
@@ -12,7 +12,7 @@ As a fleet administrator:
 2.  Review the AuDG setup and understand options and monitoring available.
 
 As a database user, DBA or application developer:
-1.  Deploy an autonomous transaction processing database inside of the Autonomous Data Guard enabled ACD.
+1.  Deploy an Autonomous AI Transaction Processing database inside of the Autonomous Data Guard enabled ACD.
 2.  Build and configure Swingbench on the primary ADB and test switchover and failover scenarios.
 3.  Reinstate a failed over AuDG database.
 4.  Convert a physical standby to snapshot standby and vice versa.
@@ -27,7 +27,7 @@ As a database user, DBA or application developer:
 
 - Log in to your OCI account as a fleet administrator
 
-- Navigate to the **Oracle Database** option in the top left hamburger menu from your OCI home screen and click **Autonomous Transaction Processing** on the page that comes up.
+- Navigate to the **Oracle Database** option in the top left hamburger menu from your OCI home screen and click **Autonomous AI Transaction Processing** on the page that comes up.
 
 - Pick **Autonomous Container Database** from the three options and click the blue **Create Autonomous Container Database** button.
 
@@ -60,13 +60,13 @@ As a database user, DBA or application developer:
 
 - Continue to Task 2 once the ACD has finished being created.
 
-## Task 2: Create an Autonomous Transaction Processing Database
+## Task 2: Create an Autonomous AI Transaction Processing Database
 
 - Log in to your OCI account as a database user.
 
-- Navigate to the **Oracle Database** option in the top left hamburger menu from your OCI home screen and click **Autonomous Transaction Processing** on the page that comes up.
+- Navigate to the **Oracle Database** option in the top left hamburger menu from your OCI home screen and click **Autonomous AI Transaction Processing** on the page that comes up.
 
-- Pick **Autonomous Database** from the three options in the left menu.
+- Pick **Autonomous AI Database** from the three options in the left menu.
 
 - Select **userXX-Compartment** under the Workshop Compartment.
 
@@ -76,10 +76,10 @@ As a database user, DBA or application developer:
 
     *More information about Compartments and Policies is provided in the OCI Identity and Access Management [documentation](https://docs.cloud.oracle.com/iaas/Content/Identity/Tasks/managingcompartments.htm?tocpath=Services%7CIAM%7C_____13).*
 
-- Click **Create Autonomous Database** to start the instance creation process.
+- Click **Create Autonomous AI Database** to start the instance creation process.
     ![This image shows the result of performing the above step.](./images/createATP-Dv2.png " ")
 
-- This will bring up the **Create Autonomous Database** screen where you specify the configurations of the instance.
+- This will bring up the **Create Autonomous AI Database** screen where you specify the configurations of the instance.
 
 - Fill in the dialog box following the screenshot below while using your user compartment and unique ADB name.
 
@@ -93,9 +93,9 @@ As a database user, DBA or application developer:
 
     ![This image shows the result of performing the above step.](./images/create-atp-full.png " ")
 
-- Click **Create Autonomous Database** to start provisioning the instance.
+- Click **Create Autonomous AI Database** to start provisioning the instance.
 
-- Your autonomous database instance should be up and running in a few minutes and is protected by AuDG.
+- Your Autonomous AI Database instance should be up and running in a few minutes and is protected by AuDG.
 
 - Once provisioned, you can click on the instance name to see instance details.
 
@@ -155,7 +155,7 @@ As a database user, DBA or application developer:
 
 ## Task 6: Reinstate the disabled standby
 
- - Log in to the cloud console and navigate under Autonomous Database and select Autonomous Container Database. If your primary and standby database are in the same compartment you should see the following:
+ - Log in to the cloud console and navigate under Autonomous AI Database and select Autonomous Container Database. If your primary and standby database are in the same compartment you should see the following:
     ![This image shows the result of performing the above step.](./images/state-overview.png " ")
 
 - Select the ACD labeled **Disabled Standby**.

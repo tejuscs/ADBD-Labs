@@ -1,31 +1,31 @@
 # Build and deploy node.js application stacks on dedicated autonomous infrastructure
 
 ## Introduction
-The Oracle Linux Cloud Developer image provides the latest development tools, languages, and Oracle Cloud Infrastructure Software Development Kits (SDKs) to rapidly deploy a comprehensive development environment. You can use the command line and GUI tools to write, debug, and run code in various languages, and develop modern applications on Oracle Cloud Infrastructure.  and drivers to build applications on autonomous databases. 
+The Oracle Linux Cloud Developer image provides the latest development tools, languages, and Oracle Cloud Infrastructure Software Development Kits (SDKs) to rapidly deploy a comprehensive development environment. You can use the command line and GUI tools to write, debug, and run code in various languages, and develop modern applications on Oracle Cloud Infrastructure.  and drivers to build applications on Autonomous AI Databases. 
 As an application developer you can now provision a developer image within minutes and connect it to your dedicated or serverless database deployment.
  As an application developer you can now provision a developer image within minutes and connect it to your dedicated or serverless database deployment.
 
 The image is pre-configured with tools and language drivers to help you build applications written in node.js, python, java and golang.
 For a complete list of features, and preinstalled components click [this documentation](https://docs.oracle.com/en-us/iaas/oracle-linux/developer/index.htm).
 
-*In this lab we will configure and deploy a node.js application in a developer client VM and connect it to an autonomous database.*
+*In this lab we will configure and deploy a node.js application in a developer client VM and connect it to an Autonomous AI Database.*
 
 Estimated Time: 20 minutes
 
 ### Objectives
 
 As an application developer,
-1. Learn how to deploy a node.js application and connect it to your dedicated autonomous database instance.
+1. Learn how to deploy a node.js application and connect it to your dedicated Autonomous AI Database instance.
 
 ### Required Artifacts
 
 - An Oracle Cloud Infrastructure account.
 
-- A pre-provisioned instance of Oracle Linux Cloud Developer image in an application subnet. Refer to the lab **Configuring a Development System** in the **Autonomous Database Dedicated for Developers and Database Users** workshop.
+- A pre-provisioned instance of Oracle Linux Cloud Developer image in an application subnet. Refer to the lab **Configuring a Development System** in the **Autonomous AI Database Dedicated for Developers and Database Users** workshop.
 
-- A pre-provisioned dedicated autonomous database instance. Refer to the lab **Provisioning Databases** in the **Autonomous Database Dedicated for Developers and Database Users** workshop.
+- A pre-provisioned dedicated Autonomous AI Database instance. Refer to the lab **Provisioning Databases** in the **Autonomous AI Database Dedicated for Developers and Database Users** workshop.
 
-- A network that provides connectivity between the application and database subnets. Refer to the lab **Prepare Private Network for OCI Implementation** in the **Autonomous Database Dedicated for Fleet Administrators** workshop.
+- A network that provides connectivity between the application and database subnets. Refer to the lab **Prepare Private Network for OCI Implementation** in the **Autonomous AI Database Dedicated for Fleet Administrators** workshop.
 
 ## Task 1: Instance Setup
 
@@ -77,11 +77,11 @@ Now that you have a sample application set up, let's get your database's secure 
 
 ## Task 3: Transfer database wallet to developer client
 
-- Log in to Oracle Cloud Infrastructure account and select **Autonomous Transaction Processing** from the menu.
+- Log in to Oracle Cloud Infrastructure account and select **Autonomous AI Transaction Processing** from the menu.
 
     ![This image shows the result of performing the above step.](./images/atpd1.png " ")
 
-- Click **Autonomous Database** and select your previously created database.
+- Click **Autonomous AI Database** and select your previously created database.
 
     ![This image shows the result of performing the above step.](./images/atpd2.png " ")
 
@@ -185,11 +185,11 @@ You may now **proceed to the next lab**.
 
 ## Acknowledgements
 
-*Congratulations! You successfully deployed and connected a node.js app to your autonomous database.*
+*Congratulations! You successfully deployed and connected a node.js app to your Autonomous AI Database.*
 
 - **Author** - Tejus S. & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer
-- **Last Updated By/Date** - Kris Bhanushali, Autonomous Database Product Management, April 2022
+- **Last Updated By/Date** - Kris Bhanushali, Autonomous AI Database Product Management, April 2022
 
 ## See an issue or have feedback?  
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!

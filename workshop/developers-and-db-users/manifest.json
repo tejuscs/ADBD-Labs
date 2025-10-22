@@ -17,7 +17,7 @@
         },
         {
             "title": "Lab 2: Configure a Development System",
-            "description": "Configuring a development system for use with your dedicated autonomous database",
+            "description": "Configuring a development system for use with your dedicated Autonomous AI Database",
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/27/2020",
             "contentid": "12nnnn",
@@ -49,7 +49,7 @@
         },
         {
             "title": "Lab 6: Using CLI commands",
-            "description": "Using CLI commands to work with your Autonomous databases",
+            "description": "Using CLI commands to work with your Autonomous AI Databases",
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/30/2020",
             "contentid": "12nnnn",
@@ -65,7 +65,7 @@
         },
         {
             "title": "Lab 8: Build Apex Application",
-            "description": "Building Apex application on dedicated autonomous database",
+            "description": "Building Apex application on dedicated Autonomous AI Database",
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/30/2020",
             "contentid": "12nnnn",
@@ -73,7 +73,7 @@
         },
         {
             "title": "Lab 9: Build Always On Applications",
-            "description": "Building Always-On applications on the autonomous database",
+            "description": "Building Always-On applications on the Autonomous AI Database",
             "partnumber": "Ennnnn_01",
             "publisheddate": "03/31/2020",
             "contentid": "12nnnn",
@@ -120,16 +120,16 @@
             "filename": "./../../adb-automatic-indexing/adb-automatic-indexing.md"
         },
         {
-            "title": "Lab 15: API Gateway with Autonomous Database Dedicated",
-            "description": "API Gateway with Autonomous Database Dedicated",
+            "title": "Lab 15: API Gateway with Autonomous AI Database Dedicated",
+            "description": "API Gateway with Autonomous AI Database Dedicated",
             "partnumber": "Ennnnn_01",
             "publisheddate": "06/27/2023",
             "contentid": "12nnnn",
             "filename": "./../../adb-oci-api-gateway/adb-apex-apigateway.md"
         },
         {
-            "title": "Lab 16: Database In-Memory on Autonomous Database Dedicated",
-            "description": "Database In-Memory on Autonomous Database Dedicated",
+            "title": "Lab 16: Database In-Memory on Autonomous AI Database Dedicated",
+            "description": "Database In-Memory on Autonomous AI Database Dedicated",
             "partnumber": "Ennnnn_01",
             "publisheddate": "22/08/2023",
             "contentid": "12nnnn",

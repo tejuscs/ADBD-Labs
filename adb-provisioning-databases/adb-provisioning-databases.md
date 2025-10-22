@@ -1,9 +1,9 @@
 
-# Provisioning an Autonomous Transaction Processing Database Instance
+# Provisioning an Autonomous AI Transaction Processing Database Instance
 
 ## Introduction
 
-This lab walks you through the steps to get started using the Oracle Autonomous Transaction Processing Database on Oracle dedicated Autonomous Infrastructure. You will provision a new database.
+This lab walks you through the steps to get started using the Oracle Autonomous AI Transaction Processing Database on Oracle dedicated Autonomous Infrastructure. You will provision a new database.
 
 Estimated Time: 10 minutes
 
@@ -11,16 +11,16 @@ Estimated Time: 10 minutes
 
 As a database user, DBA or application developer:
 
-1. Rapidly deploy autonomous transaction processing databases.
+1. Rapidly deploy Autonomous AI Transaction Processing databases.
 2. Manage your database backups.
 
 ### Required Artifacts
 
 - An Oracle Cloud Infrastructure account with a pre-provisioned Exadata Infrastructure and Container Database
 
-## Task 1: Create an Autonomous Transaction Processing Database
+## Task 1: Create an Autonomous AI Transaction Processing Database
 
-In this section you will be provisioning a dedicated autonomous database using the cloud console.
+In this section you will be provisioning a dedicated Autonomous AI Database using the cloud console.
 
 *Log in to your OCI account as a database user*
 
@@ -28,11 +28,11 @@ In this section you will be provisioning a dedicated autonomous database using t
 
     ![This image shows the result of performing the above step.](./images/picture100-20.jpeg " ")
 
--  Click **Autonomous Transaction Processing** from the menu.
+-  Click **Autonomous AI Transaction Processing** from the menu.
 
     ![This image shows the result of performing the above step.](./images/picture100-21.jpeg " ")
 
-- Select **userXX-Compartment under the Workshop Compartment** and click on **Create Autonomous Database** button to start instance creation process.
+- Select **userXX-Compartment under the Workshop Compartment** and click on **Create Autonomous AI Database** button to start instance creation process.
 
     ![This image shows the result of performing the above step.](./images/provisionatp-dname1.png " ")
 
@@ -43,7 +43,7 @@ In this section you will be provisioning a dedicated autonomous database using t
     More information about Compartments and Policies is provided in the OCI Identity and Access Management [documentation](https://docs.cloud.oracle.com/iaas/Content/Identity/Tasks/managingcompartments.htm?tocpath=Services%7CIAM%7C_____13).
 
 
--  This will bring up the **Create Autonomous Database** screen where you specify the configuration of the instance.
+-  This will bring up the **Create Autonomous AI Database** screen where you specify the configuration of the instance.
 
     ![This image shows the result of performing the above step.](./images/provisionatp-d.png " ")
 
@@ -79,9 +79,9 @@ In this section you will be provisioning a dedicated autonomous database using t
 
     ![This image shows the result of performing the above step.](./images/picture100-29-mac.jpeg " ")
 
--  Click **Create Autonomous Database** to start provisioning the instance.
+-  Click **Create Autonomous AI Database** to start provisioning the instance.
 
-- Your autonomous database instance should be up and running in a few minutes.
+- Your Autonomous AI Database instance should be up and running in a few minutes.
 
 
 
@@ -89,7 +89,7 @@ In this section you will be provisioning a dedicated autonomous database using t
 
     ![This image shows the result of performing the above step.](./images/doneprovision.png " ")
 
-There are a few other things you can do as an administrator of your autonomous database.
+There are a few other things you can do as an administrator of your Autonomous AI Database.
 
 - You can take a manual on-demand backup in addition to the scheduled daily backups. Scroll down to *Resources* and Click **Backups** --> **Create Manual Backup** on the database details page, provide a name and click **Create Manual Backup** once again on the dialog box.
 
@@ -111,7 +111,7 @@ You may now **proceed to the next lab**.
 
 ## Acknowledgements
 
-*All Done! You have successfully deployed your Autonomous Database instance and it should be ready for use in a few minutes.*
+*All Done! You have successfully deployed your Autonomous AI Database instance and it should be ready for use in a few minutes.*
 
 - **Author** - Tejus S. & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer

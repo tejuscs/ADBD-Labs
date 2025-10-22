@@ -1,6 +1,6 @@
 # ADB Schema Advisor
 ## Introduction
-The Autonomous Database Schema Advisor assists in discovering the database schema objects prior to performing the actual migration. The Advisor analyzes an existing schema in your database and examines the types and structures of objects within it, and generates a report highlighting: 
+The Autonomous AI Database Schema Advisor assists in discovering the database schema objects prior to performing the actual migration. The Advisor analyzes an existing schema in your database and examines the types and structures of objects within it, and generates a report highlighting: 
 - Summary of schema objects that will migrate/not migrate to ADB
 - List of schema objects that will not migrate to ADB (due to the lockdown profile)
 - List of objects that will migrate with changes (due to transformations)
@@ -62,10 +62,10 @@ As a LOB user
 *Note : Where <List of Schemas> is a comma separated list of Schemas that you like to analyze; or specify ‘ALL’ to analyze all user schemas.
 Where <adb_type> is one of the following migration destinations:*
     
-    1. ATP for Autonomous Transaction Processing (Serverless)
-    2. ADW for Autonomous Data Warehouse (Serverless)
-    3. ATPD for Autonomous Transaction Processing (Dedicated)
-    4. ADWD for Autonomous Data Warehouse (Dedicated)
+    1. ATP for Autonomous AI Transaction Processing (Serverless)
+    2. ADW for Autonomous AI Lakehouse (Serverless)
+    3. ATPD for Autonomous AI Transaction Processing (Dedicated)
+    4. ADWD for Autonomous AI Lakehouse (Dedicated)
     
 *You may specify a maximum of 30 schemas in a single advisor run. If you like to run more than 30, consider running using schemas=>’ALL’.*
     

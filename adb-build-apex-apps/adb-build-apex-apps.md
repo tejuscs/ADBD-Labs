@@ -1,4 +1,4 @@
-# Build Apex application on dedicated autonomous database
+# Build Apex application on dedicated Autonomous AI Database
 
 ## Introduction
 Oracle Application Express (Oracle APEX) is a rapid web application development tool for the Oracle database. Using only a web browser and limited programming experience, you can develop and deploy professional applications that are both fast and secure. Oracle APEX is a fully supported, no cost option of the Oracle database.
@@ -16,23 +16,23 @@ Estimated Time: 30 minutes
 
 ### Objectives
 
-1. Access OCI autonomous database console and get URL for apex web console.
+1. Access OCI Autonomous AI Database console and get URL for apex web console.
 2. Create a VNC connection to developer client VM and access apex on your database as admin user.
 3. Set up additional apex developer users.
 
 ### Required Artifacts
 
-- An Oracle Cloud Infrastructure account with access to Autonomous Transaction Processing console.
-- A pre-provisioned autonomous database with admin access.
+- An Oracle Cloud Infrastructure account with access to Autonomous AI Transaction Processing console.
+- A pre-provisioned Autonomous AI Database with admin access.
 - A pre-provisioned developer client machine with network access to database.
 
-## Task 1: Access the OCI Autonomous Transaction Processing console and finding APEX URL
+## Task 1: Access the OCI Autonomous AI Transaction Processing console and finding APEX URL
 
-- To get the APEX URL for your ATP Dedicated instance, log into the Oracle Cloud and navigate to Autonomous Transaction Processing option from the Hamburger menu.
+- To get the APEX URL for your ATP Dedicated instance, log into the Oracle Cloud and navigate to Autonomous AI Transaction Processing option from the Hamburger menu.
     
     ![This image shows the result of performing the above step.](./images/navigateatp1.png " ")
 
-- On the Autonomous Database console, select the ATP-Dedicated database you created.
+- On the Autonomous AI Database console, select the ATP-Dedicated database you created.
     
     ![This image shows the result of performing the above step.](./images/selectadb.png " ")
 
@@ -49,11 +49,11 @@ Estimated Time: 30 minutes
 
 - Since ATP Dedicated instances are typically deployed in a private network, one way to get to your APEX console is via a developer client machine setup in the same network.
 
-- Refer to the lab **Configuring a Development System** in the **Autonomous Database Dedicated for Developers and Database Users** workshop for instructions on setting up and connecting to a developer client machine.
+- Refer to the lab **Configuring a Development System** in the **Autonomous AI Database Dedicated for Developers and Database Users** workshop for instructions on setting up and connecting to a developer client machine.
 
 - For the purpose of this lab we assume that your have already deployed and have ssh access to a developer client virtual machine in a public application subnet.
 
-- Alternatively, you may also access the Apex console of your dedicated ATP instance from your local web browser If you are in the same OCI Network / VCN as your database. For detailed instruction on setting up a VPN connection into your private database cloud infrastructure, refer to the lab **Configure VPN Connectivity in your Exadata Network** in the **Autonomous Database Dedicated for Fleet Administrators** workshop.
+- Alternatively, you may also access the Apex console of your dedicated ATP instance from your local web browser If you are in the same OCI Network / VCN as your database. For detailed instruction on setting up a VPN connection into your private database cloud infrastructure, refer to the lab **Configure VPN Connectivity in your Exadata Network** in the **Autonomous AI Database Dedicated for Fleet Administrators** workshop.
 
 - Open a terminal window on your machine and log into the developer VM.
 
@@ -163,7 +163,7 @@ You may now **proceed to the next lab**.
 
 - **Author** - Tejus S. & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer
-- **Last Updated By/Date** - Kris Bhanushali, Autonomous Database Product Management, March 2022
+- **Last Updated By/Date** - Kris Bhanushali, Autonomous AI Database Product Management, March 2022
 
 ## See an issue or have feedback?  
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!

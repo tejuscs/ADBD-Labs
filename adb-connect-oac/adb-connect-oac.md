@@ -1,4 +1,4 @@
-# Connect Oracle Analytics Cloud with your dedicated autonomous database
+# Connect Oracle Analytics Cloud with your dedicated Autonomous AI Database
 
 ## Introduction
 Oracle Analytics Cloud empowers business analysts and consumers with modern, AI-powered, self-service analytics capabilities for data preparation, visualization, enterprise reporting, augmented analysis, and natural language processing/generation.
@@ -14,12 +14,12 @@ Estimated Time: 45 minutes
 As a LOB user
 1. Install and configure Remote Data Gateway in Oracle Cloud Developer Image.
 2. Configure Remote Data Gateway with Oracle Analytics Cloud.
-3. Connect Autonomous Database Dedicated with Oracle Analytics Cloud.
+3. Connect Autonomous AI Database Dedicated with Oracle Analytics Cloud.
 
 ### Required Artifacts
 
-- A pre-provisioned instance of Oracle Developer Client image in an application subnet. Refer to the lab **Configuring a Development System** in the **Autonomous Database Dedicated for Developers and Database Users** workshop on how provision a developer client.
-- A pre-provisioned Autonomous Transaction Processing instance. Refer to the lab **Provisioning Databases** in the **Autonomous Database Dedicated for Developers and Database Users** workshop on how to provision an ATP database.
+- A pre-provisioned instance of Oracle Developer Client image in an application subnet. Refer to the lab **Configuring a Development System** in the **Autonomous AI Database Dedicated for Developers and Database Users** workshop on how provision a developer client.
+- A pre-provisioned Autonomous AI Transaction Processing instance. Refer to the lab **Provisioning Databases** in the **Autonomous AI Database Dedicated for Developers and Database Users** workshop on how to provision an ATP database.
 - A pre-provisioned Oracle Analytics Cloud instance. Refer [to this documentation](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acoci/create-services.html#GUID-D2F03D22-95FB-45C8-AB94-928AE4E167AB) to create Oracle Analytics Cloud.
 - VNC Viewer or other suitable VNC client on your local laptop.
 
@@ -31,7 +31,7 @@ Let's first download the DB wallet to your local machine (laptop) and then scp /
 
 - From your local browser, navigate to OCI console.
 
-- On the ATP console, select the dedicated ATP instance provisioned in the lab **Provisioning Databases** in the **Autonomous Database Dedicated for Developers and Database Users** workshop.
+- On the ATP console, select the dedicated ATP instance provisioned in the lab **Provisioning Databases** in the **Autonomous AI Database Dedicated for Developers and Database Users** workshop.
     ![This image shows the result of performing the above step.](./images/doneprovision.png " ")
 
 - Click **DB Connection** to open up a Database Connection pop-up window.
@@ -224,7 +224,7 @@ First we SSH into the dev client and invoke the VNC server that comes pre-instal
     ![This image shows the result of performing the above step.](./images/rdc-installer13.png " ")
 
 
-## Task 4: Configure Remote Data Connectivity and connect Autonomous Database Dedicated to Oracle Analytics Cloud
+## Task 4: Configure Remote Data Connectivity and connect Autonomous AI Database Dedicated to Oracle Analytics Cloud
 
 - Open Oracle Analytics Cloud URL in you local machine and log in to the console.
 
@@ -256,7 +256,7 @@ First we SSH into the dev client and invoke the VNC server that comes pre-instal
 
     ![This image shows the result of performing the above step.](./images/createconn.png " ")
 
-- Select Oracle Autonomous Transaction Processing.
+- Select Oracle Autonomous AI Transaction Processing.
 
     ![This image shows the result of performing the above step.](./images/createconn1.png " ")
 
@@ -268,7 +268,7 @@ First we SSH into the dev client and invoke the VNC server that comes pre-instal
 
     ![This image shows the result of performing the above step.](./images/createconn3.png " ")
 
-- Enter Username and Password of your Autonomous Database and place a check mark on **Use Remote Data Connectivity**.
+- Enter Username and Password of your Autonomous AI Database and place a check mark on **Use Remote Data Connectivity**.
 
     ![This image shows the result of performing the above step.](./images/createconn4.png " ")
 
@@ -276,7 +276,7 @@ First we SSH into the dev client and invoke the VNC server that comes pre-instal
 
     ![This image shows the result of performing the above step.](./images/connection.png " ")
 
-- You can see Autonomous Database connected to Oracle Analytics Cloud.
+- You can see Autonomous AI Database connected to Oracle Analytics Cloud.
 
     ![This image shows the result of performing the above step.](./images/connectionsuccess.png " ")
 
@@ -288,11 +288,11 @@ You may now **proceed to the next lab**.
 
 ## Acknowledgements
 
-*Great Work! You successfully connected Autonomous Database Dedicated to Oracle Analytics Cloud through Remote Data Gateway.*
+*Great Work! You successfully connected Autonomous AI Database Dedicated to Oracle Analytics Cloud through Remote Data Gateway.*
 
 - **Author** - Tejus S. & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer
-- **Last Updated By/Date** - Kris Bhanushali, Autonomous Database Product Management, March 2022
+- **Last Updated By/Date** - Kris Bhanushali, Autonomous AI Database Product Management, March 2022
 
 ## See an issue or have feedback?  
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!

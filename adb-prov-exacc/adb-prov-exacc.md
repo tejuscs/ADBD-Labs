@@ -1,8 +1,8 @@
 
-# Provisioning Exadata Infrastructure for Autonomous database on Exadata Cloud@Customer
+# Provisioning Exadata Infrastructure for Autonomous AI Database on Exadata Cloud@Customer
 
 ## Introduction
-Oracle Autonomous Database on Oracle Exadata Cloud@Customer provides the benefits of a self-driving, self-securing, and self-repairing database management system, bringing it closer to your applications on-premises while deployed securely behind your firewall. Setting up and using Autonomous databases on your Exadata Cloud@Customer consists of two steps
+Oracle Autonomous AI Database on Oracle Exadata Cloud@Customer provides the benefits of a self-driving, self-securing, and self-repairing database management system, bringing it closer to your applications on-premises while deployed securely behind your firewall. Setting up and using Autonomous AI Databases on your Exadata Cloud@Customer consists of two steps
 
 1. **Provision an Exadata Infrastructure**
 
@@ -141,7 +141,7 @@ The Review Configuration page displays detailed information about the VM cluster
 The VM Cluster Network Details page is now displayed. Initially after creation, the state of the VM cluster network is **Requires Validation**
 
 
-Next, you may proceed to select a backup destination for your Autonomous Database backups
+Next, you may proceed to select a backup destination for your Autonomous AI Database backups
 
 
 ## Task 3: Create a Backup Destination
@@ -162,7 +162,7 @@ Once you select a compartment and provide a display name, you may pick one of th
 
 1. **Recovery Appliance**
 
-If you choose to backup your autonomous databases on an on-premise Oracle Recovery Appliance,
+If you choose to backup your Autonomous AI Databases on an on-premise Oracle Recovery Appliance,
 
 Provide the Recovery Appliance connect string and VPC username. Contact your ZDLRA backup admin for these details.
 
@@ -172,7 +172,7 @@ Click **Create Backup Destination** at the bottom of the page.
 
 2. **NFS**
 
-If you choose to backup your autonomous databases on an on-premise NFS Storage device,
+If you choose to backup your Autonomous AI Databases on an on-premise NFS Storage device,
 
 Provide the IP Address (up to 4) of your NFS Server and one or more NFS Export Shares. Contact your network / backup admin for details
 
@@ -205,7 +205,7 @@ You may now **proceed to the next lab**.
 
 ## Acknowledgements
 
-*All Done! You have successfully setup your Autonomous Database on Exadata Cloud @ Customer environment. It is now ready to deploy Autonomous VM Clusters*
+*All Done! You have successfully setup your Autonomous AI Database on Exadata Cloud @ Customer environment. It is now ready to deploy Autonomous VM Clusters*
 
 - **Author** - Simon Law & Kris Bhanushali
 - **Last Updated By/Date** - Kris Bhanushali, July 2020

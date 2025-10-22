@@ -10,14 +10,14 @@ Estimated Time: 20 minutes
 
 As an adminstrator:
 1. Simulate a production workload using Swingbench load generator.
-2. Monitor and manage your autonomous database performance using Performance Hub.
+2. Monitor and manage your Autonomous AI Database performance using Performance Hub.
 
 
 ### Required Artifacts
 
 - An Oracle Cloud Infrastructure account.
 - A pre-provisioned instance of Oracle Developer Client image configured with Swingbench in an application subnet. Refer to the previous lab, **Build Always On Applications**.
-- A pre-provisioned Autonomous Transaction Processing instance. Refer to the earlier lab, **Provisioning Databases**.
+- A pre-provisioned Autonomous AI Transaction Processing instance. Refer to the earlier lab, **Provisioning Databases**.
 - Successful completion of the earlier labs, **Configure a Development System** and **Build Always On Applications**.
 
 ## Task 1: Log in to the Oracle Cloud Developer image and start the order entry workload

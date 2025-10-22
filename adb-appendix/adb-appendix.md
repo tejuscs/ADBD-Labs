@@ -196,7 +196,7 @@ To access a GUI via VNC, do the following:
 
 ### Step 1: Locate the SCAN hostname of your AEI
 
-- Go to your Autonomous Database Console and open the details page of any ADB instance you have already provisioned on this AEI. Click the DB Connection button.
+- Go to your Autonomous AI Database Console and open the details page of any ADB instance you have already provisioned on this AEI. Click the DB Connection button.
     ![This image shows the result of performing the above step.](./images/dbconnection2.png " ")
 
 - On the Database Connection popup, pick any TNS Connection String entry and expand it as shown below. Your exadata hostname is embedded in this TNS entry. Click 'copy' and paste the entire TNS string onto a notepad. You may then pick out the hostname when you need it in the steps below.
@@ -248,7 +248,7 @@ You now have the 3 SCAN IP's of your AEI cluster. Once your network admin adds t
 
 - **Author** - Tejus S. & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer
-- **Last Updated By/Date** - Kris Bhanushali, Autonomous Database Product Management, March 2022
+- **Last Updated By/Date** - Kris Bhanushali, Autonomous AI Database Product Management, March 2022
 
 ## See an issue or have feedback?  
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!

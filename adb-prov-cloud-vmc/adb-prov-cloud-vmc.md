@@ -1,9 +1,9 @@
 
-# Provisioning a Cloud Autonomous Exadata VM Cluster for Autonomous Database on Dedicated Infrastructure
+# Provisioning a Cloud Autonomous Exadata VM Cluster for Autonomous AI Database on Dedicated Infrastructure
 
 ## Introduction
 
-An Autonomous Exadata VM Cluster is a set of symmetrical VMs across all Compute nodes. Autonomous Container Database and Autonomous Databases run all the VMs across all nodes enabling high availability. It consumes all the resources of the underlying Exadata Infrastructure.
+An Autonomous Exadata VM Cluster is a set of symmetrical VMs across all Compute nodes. Autonomous Container Database and Autonomous AI Databases run all the VMs across all nodes enabling high availability. It consumes all the resources of the underlying Exadata Infrastructure.
 
 **This lab provides steps to set up an Autonomous VM Cluster on your Exadata Infrastructure.**
 
@@ -24,7 +24,7 @@ Watch the video below for step by step directions on creating an Autonomous VM C
 
 *Log in to your OCI account as a fleet administrator.*
 
-- Navigate to the **Oracle Database** option in the top left hamburger menu from your OCI home screen and select **Autonomous Database or Autonomous Dedicated Infrastructure**.
+- Navigate to the **Oracle Database** option in the top left hamburger menu from your OCI home screen and select **Autonomous AI Database or Autonomous Dedicated Infrastructure**.
 
     ![create-avmc-pc1](./images/create-avmc-pc1.png " ")
 
@@ -52,9 +52,9 @@ Watch the video below for step by step directions on creating an Autonomous VM C
 
             - OCPU count per VM: Specify the OCPU count for each individual VM. The minimum value is 5 OCPUs per VM.
 
-            - Database memory per OCPU (GB): The memory per OCPU allocated for the Autonomous Databases in the Autonomous VM CLuster.
+            - Database memory per OCPU (GB): The memory per OCPU allocated for the Autonomous AI Databases in the Autonomous VM CLuster.
             
-            - Database storage(TB): Data storage allocated for Autonomous Database creation in the Autonomous VM Cluster
+            - Database storage(TB): Data storage allocated for Autonomous AI Database creation in the Autonomous VM Cluster
 
     5. **Configure Automatic Maintenance:** Optionally, configure the automatic maintenance schedule by clicking Modify Schedule.
 

@@ -1,9 +1,9 @@
-# Accessing Database Actions and Performance Hub consoles on your dedicated Autonomous Database instance
+# Accessing Database Actions and Performance Hub consoles on your dedicated Autonomous AI Database instance
 
 ## Introduction
-Oracle  provides an integrated development environment and a database administration interface for Oracle databases in OCI. A web interface for Oracle SQL Developer, Database Actions provides a subset of the desktop product features and is bundled with various database services available in Oracle Cloud, including the dedicated Autonomous Database.
+Oracle  provides an integrated development environment and a database administration interface for Oracle databases in OCI. A web interface for Oracle SQL Developer, Database Actions provides a subset of the desktop product features and is bundled with various database services available in Oracle Cloud, including the dedicated Autonomous AI Database.
 
-On the Performance Hub page of the Database Actions console, you can monitor your Autonomous Database entities' performance and ensure that these entities perform optimally.
+On the Performance Hub page of the Database Actions console, you can monitor your Autonomous AI Database entities' performance and ensure that these entities perform optimally.
 
 This page allows you to view all the performance data available for a specific period. Once a period is selected, the database performance is displayed.
 
@@ -13,18 +13,18 @@ Estimated Time: 20 minutes
 
 As a developer or DBA:
 
-1. Access the OCI Autonomous Database console and get the URL for the Database Actions console.
+1. Access the OCI Autonomous AI Database console and get the URL for the Database Actions console.
 2. Create a VNC connection to the developer client VM and access the Database Actions console.
-3. Access Performance Hub for your Autonomous Database instance.
+3. Access Performance Hub for your Autonomous AI Database instance.
 
 ### Required Artifacts
-- An Oracle Cloud Infrastructure account with access to Autonomous Transaction Processing console.
-- A pre-provisioned Autonomous Database with admin access.
+- An Oracle Cloud Infrastructure account with access to Autonomous AI Transaction Processing console.
+- A pre-provisioned Autonomous AI Database with admin access.
 - A pre-provisioned developer client machine with network access to the database.
 
-## Task 1: Access the OCI Autonomous Database console and get the URL for the Database Actions console
+## Task 1: Access the OCI Autonomous AI Database console and get the URL for the Database Actions console
 
-- Log in to your Oracle Cloud Infrastructure account and navigate to your dedicated Autonomous Database console page.
+- Log in to your Oracle Cloud Infrastructure account and navigate to your dedicated Autonomous AI Database console page.
 
     ![This image shows the result of performing the above step.](./images/access_db_console.png " ")
 
@@ -38,7 +38,7 @@ As a developer or DBA:
 
 ## Task 2: Create a VNC connection to the developer client VM and access the Database Actions console
 
-- Since your Autonomous Database is in a private network, you cannot access it with the above URL unless you are on a machine that has a network path to your database subnet.
+- Since your Autonomous AI Database is in a private network, you cannot access it with the above URL unless you are on a machine that has a network path to your database subnet.
 
 - Let's connect to the developer client machine you set up in the earlier lab, **Configure a Development System**, using a secure ssh tunnel.
 
@@ -74,7 +74,7 @@ As a developer or DBA:
 
 - Explore the Database Actions interface and refer to its documentation for usage details.
 
-- You may also access the Database Actions console of your dedicated Autonomous Database instance from your local web browser, if you are in the same OCI Network/VCN as your database. For detailed instructions on setting up a VPN connection into your private database cloud infrastructure, refer to the lab **Configure VPN Connectivity in your Exadata Network** in the **Introduction to ADB Dedicated for Fleet Administrators** workshop.
+- You may also access the Database Actions console of your dedicated Autonomous AI Database instance from your local web browser, if you are in the same OCI Network/VCN as your database. For detailed instructions on setting up a VPN connection into your private database cloud infrastructure, refer to the lab **Configure VPN Connectivity in your Exadata Network** in the **Introduction to ADB Dedicated for Fleet Administrators** workshop.
 
 ## Task 3: Access the Performance Hub through the Database Actions Console
 
@@ -103,7 +103,7 @@ As a developer or DBA:
 ### **SQL Monitoring tab**
 - The **SQL Monitoring** tab is not displayed by default, and to view it, click **SQL Monitoring** on the Performance Hub.
 
-- The **SQL Monitoring** tab enables real-time SQL monitoring. It allows you to view long-running SQL statements in your Autonomous Database. On this tab, you can:
+- The **SQL Monitoring** tab enables real-time SQL monitoring. It allows you to view long-running SQL statements in your Autonomous AI Database. On this tab, you can:
 
     - Drill down into individual SQL statements.
     - View the execution plan and the amount of database time being used by each SQL execution plan line.
@@ -118,7 +118,7 @@ You may now **proceed to the next lab**.
 
 ## Acknowledgements
 
-*Fantastic! You successfully learned to use the Database Actions Console and Performance Hub on your Autonomous Database instance.*
+*Fantastic! You successfully learned to use the Database Actions Console and Performance Hub on your Autonomous AI Database instance.*
 
 - **Author** - Tejus S. & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer

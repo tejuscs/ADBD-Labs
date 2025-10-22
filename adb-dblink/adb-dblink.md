@@ -1,30 +1,30 @@
-# Migrating to Autonomous Database Dedicated using Database Link
+# Migrating to Autonomous AI Database Dedicated using Database Link
 
 ## Introduction
 
-The Autonomous database supports outgoing Database Links to other Oracle databases.  Database Links can be used with Autonomous Database to read or transfer data between 2 hosts. As long as there is right network connectivity from Source database to Autonomous Database, Database Links can used to Migrate the databases. 
+The Autonomous AI Database supports outgoing Database Links to other Oracle databases.  Database Links can be used with Autonomous AI Database to read or transfer data between 2 hosts. As long as there is right network connectivity from Source database to Autonomous AI Database, Database Links can used to Migrate the databases. 
 
-This lab walks you through how to migrate oracle database to Autonomous Database using Datapump and Database Links.
+This lab walks you through how to migrate oracle database to Autonomous AI Database using Datapump and Database Links.
 
 Estimated Time: 40 minutes
 
 ### Objectives
 
 As a database administrator:
-1. Configure Database Links between Source and Autonomous Database.
-2. Use Datapump to import the database from Source system to Autonomous Database.
+1. Configure Database Links between Source and Autonomous AI Database.
+2. Use Datapump to import the database from Source system to Autonomous AI Database.
 
 ### Required Artifacts
 
 - An Oracle Cloud Infrastructure account.
-- Source Database (Oracle Database Cloud Service) and Autonomous Database 
-- Network Connectivity between Source and Autonomous Database
+- Source Database (Oracle Database Cloud Service) and Autonomous AI Database 
+- Network Connectivity between Source and Autonomous AI Database
 
-## Task 1: Test Network connection between your Source System and Autonomous Database
+## Task 1: Test Network connection between your Source System and Autonomous AI Database
 
 This Lab assumes you have a pre-provisioned Database Cloud service in your tenancy as a Source database. Learn how to create Database Cloud Service [here](https://docs.oracle.com/en-us/iaas/dbcs/doc/create-db-system-using-console.html).
 
-NOTE: Network should be configured prior to next steps for Source Database to talk to Autonomous Database. 
+NOTE: Network should be configured prior to next steps for Source Database to talk to Autonomous AI Database. 
 Refer [here]() to setup your Network configuration. 
 
 - Log in to your OCI tenancy and navigate to Oracle Base Database(VM,BM) from the main hamburger menu.
@@ -35,11 +35,11 @@ Refer [here]() to setup your Network configuration.
 
     ![This image shows the result of performing the above step.](./images/dblink2.png)
 
-- SSH into your Bastion host and sqlplus to your Autonomous Database.
+- SSH into your Bastion host and sqlplus to your Autonomous AI Database.
 
-Note: Please refer to Lab guide ***Configure a development system for use with your dedicated autonomous database*** under Developer and Database Users to configure your Development system to be able to ssh or sqlplus into Oracle database. 
+Note: Please refer to Lab guide ***Configure a development system for use with your dedicated Autonomous AI Database*** under Developer and Database Users to configure your Development system to be able to ssh or sqlplus into Oracle database. 
 
-- Ensure the network is configured from your Source System to talk to Autonomous Database. Download and copy the wallet to your Source System and test the connection to ADB.
+- Ensure the network is configured from your Source System to talk to Autonomous AI Database. Download and copy the wallet to your Source System and test the connection to ADB.
 
     ![This image shows the result of performing the above step.](./images/dblink3.png)
 
@@ -47,15 +47,15 @@ Note: Please refer to Lab guide ***Configure a development system for use with y
 
 ## Task 2: Create Database Link
 
-Once you are sucessfully connected the network configuration from your Source Database to Autonomous Database in Task 1, we are not going to create a Database link from Autonomous Database to Source Oracle Database. 
+Once you are sucessfully connected the network configuration from your Source Database to Autonomous AI Database in Task 1, we are not going to create a Database link from Autonomous AI Database to Source Oracle Database. 
 
-- SQLPLUS into Autonomous Database from your Source System
+- SQLPLUS into Autonomous AI Database from your Source System
 
     ![This image shows the result of performing the above step.](./images/dblink3.png)
 
-- Create the the Database link from your Autonomous database to Source Database 
+- Create the the Database link from your Autonomous AI Database to Source Database 
 
-NOTE: sqlplus into Autonomous Database using **admin** as Username and the Password and Create Database link.
+NOTE: sqlplus into Autonomous AI Database using **admin** as Username and the Password and Create Database link.
 
     
 ![This image shows the result of performing the above step.](./images/dblink4.png)
@@ -66,7 +66,7 @@ CREATE DATABASE LINK <Source_Database_global_unique_name> CONNECT TO system iden
 </copy>
 ````
 
-- Test if the Database Link you created works from Autonomous Database
+- Test if the Database Link you created works from Autonomous AI Database
 
 
     ![This image shows the result of performing the above step.](./images/dblink5.png)
@@ -80,12 +80,12 @@ select * from dual@<Database_Link>;
 NOTE: Create Profiles and Roles prior to importing 
 
 
-## Task 3: Import data from Source Oracle database to Autonomous Database
+## Task 3: Import data from Source Oracle database to Autonomous AI Database
 
-You are now ready to import data from your Source database to Autonomous Database using import data pump.
+You are now ready to import data from your Source database to Autonomous AI Database using import data pump.
 
 
-- Select the schema / schemas you want to import to Autonomous Database and run Import datapump from your source System.
+- Select the schema / schemas you want to import to Autonomous AI Database and run Import datapump from your source System.
 
 
     ![This image shows the result of performing the above step.](./images/dblink6.png)
@@ -96,7 +96,7 @@ impdp admin/<ADB_Password>@adb2_high SCHEMAS = <schemas> network_link=<Database_
 </copy>
 ````
 
-- SQLPLUS into Autonomous Database to verify the data migration.
+- SQLPLUS into Autonomous AI Database to verify the data migration.
 
     ![This image shows the result of performing the above step.](./images/dblink7.png)
 
@@ -104,11 +104,11 @@ impdp admin/<ADB_Password>@adb2_high SCHEMAS = <schemas> network_link=<Database_
 
     ![This image shows the result of performing the above step.](./images/dblink8.png)
 
-You have now successfully migrated your Source Database to Autonomous Database using Database Links. 
+You have now successfully migrated your Source Database to Autonomous AI Database using Database Links. 
 
 
 ## Acknowledgements
-*Congratulations! You successfully migrated your Oracle database to Autonomous Databases*
+*Congratulations! You successfully migrated your Oracle database to Autonomous AI Databases*
 
 - **Author** - Tejus S
 - **Last Updated By/Date** -  Tejus S, July 2022

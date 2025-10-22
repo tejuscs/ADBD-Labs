@@ -1,4 +1,4 @@
-# Configure a development system for use with your dedicated autonomous database
+# Configure a development system for use with your dedicated Autonomous AI Database
 
 ## Introduction
 The Oracle Linux Cloud Developer image provides the latest development tools, languages, and Oracle Cloud Infrastructure Software Development Kits (SDKs) to rapidly deploy a comprehensive development environment. You can use the command line and GUI tools to write, debug, and run code in various languages, and develop modern applications on Oracle Cloud Infrastructure. As an application developer you can now provision a developer image within minutes and connect it to your dedicated or serverless database deployment.
@@ -15,12 +15,12 @@ Estimated Time: 30 minutes
 As a database user, DBA or application developer,
 1. Create a development system from a pre-built Platform images
 2. Create an ssh tunnel from your local laptop into your development system
-3. Configure a secure connection from your development system to your dedicated autonomous database using Oracle SQL Developer, SQLCL and SQL*Plus.
+3. Configure a secure connection from your development system to your dedicated Autonomous AI Database using Oracle SQL Developer, SQLCL and SQL*Plus.
 
 ### Required Artifacts
 
 - An Oracle Cloud Infrastructure account with IAM privileges to provision compute instances
-- A pre-provisioned dedicated autonomous database instance. Refer to the lab **Provisioning Databases** in the **Autonomous Database Dedicated for Developers and Database Users** workshop on how to provision an ATP database.
+- A pre-provisioned dedicated Autonomous AI Database instance. Refer to the lab **Provisioning Databases** in the **Autonomous AI Database Dedicated for Developers and Database Users** workshop on how to provision an ATP database.
 - VNC Viewer or other suitable VNC client on your local laptop
 
 
@@ -56,7 +56,7 @@ Deploying a pre-configured client machine instance.
 
     *Note:
     Please ensure you have picked the right compartments where network resources exist.*
-    - A network administrator needs to pre-provision a client network and setup access path to your autonomous database network. Please contact your cloud account / network / fleet administrator for application subnet information.
+    - A network administrator needs to pre-provision a client network and setup access path to your Autonomous AI Database network. Please contact your cloud account / network / fleet administrator for application subnet information.
 
     ![This image shows the result of performing the above step.](./images/computenetwork.png " ")
 
@@ -80,7 +80,7 @@ Let's first download the DB wallet to your local machine (laptop) and then scp /
 
 - From your local browser, navigate to OCI console.
 
-- On the ATP console, select the dedicated ATP instance provisioned in the lab **Provisioning Databases** in the **Autonomous Database Dedicated for Developers and Database Users** workshop on how to provision an ATP database.
+- On the ATP console, select the dedicated ATP instance provisioned in the lab **Provisioning Databases** in the **Autonomous AI Database Dedicated for Developers and Database Users** workshop on how to provision an ATP database.
     ![This image shows the result of performing the above step.](./images/doneprovision.png " ")
 
 - Click **DB Connection** to open the Database Connection pop-up window.
@@ -183,14 +183,14 @@ First we shh into the dev client and invoke the VNC server that comes pre-instal
 - On successful conection to VNC desktop, click on *Activities* from your VNC Viewer and click on *Firefox* browser. 
     ![This image shows the result of performing the above step.](./images/sql-developer-vnc.png " ")
 
-- Login to your OCI console and navigate to your Autonomous Database.
+- Login to your OCI console and navigate to your Autonomous AI Database.
     ![This image shows the result of performing the above step.](./images/sql-developer-vnc-1.png " ")
 
-- Click on *Database Actions* from Autonomous Database page and copy the URL. 
+- Click on *Database Actions* from Autonomous AI Database page and copy the URL. 
     ![This image shows the result of performing the above step.](./images/sql-developer-vnc-2.png " ")
     ![This image shows the result of performing the above step.](./images/sql-developer-vnc-3.png " ")
 
-- Paste the URL in new tab and enter **admin** as *Username* and the password for your Autonomous database. 
+- Paste the URL in new tab and enter **admin** as *Username* and the password for your Autonomous AI Database. 
 
     ![This image shows the result of performing the above step.](./images/sql-developer-vnc-4.png " ")
 
@@ -265,11 +265,11 @@ You may now **proceed to the next lab**.
 
 ## Acknowledgements
 
-*Great Work! You successfully created a client machine and connected to your autonomous database instance using SQL Developer and command line tools.*
+*Great Work! You successfully created a client machine and connected to your Autonomous AI Database instance using SQL Developer and command line tools.*
 
 - **Author** - Tejus S. & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer
-- **Last Updated By/Date** - Kris Bhanushali, Autonomous Database Product Management, April 2022
+- **Last Updated By/Date** - Kris Bhanushali, Autonomous AI Database Product Management, April 2022
 
 ## See an issue or have feedback?  
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!

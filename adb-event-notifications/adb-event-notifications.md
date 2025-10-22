@@ -9,15 +9,15 @@ Estimated Time: 20 minutes
 
 ### Objectives
 As an database developer or administrator:
-1. Learn how to set up autonomous database event topics.
+1. Learn how to set up Autonomous AI Database event topics.
 2. Subscribe to database events via email and SMS.
 
 ### Required Artifacts
-- An Oracle Cloud Infrastructure account with privileges to provision an autonomous database and create ONS topics and events.
+- An Oracle Cloud Infrastructure account with privileges to provision an Autonomous AI Database and create ONS topics and events.
 
 ## Task 1: Set up email / SMS notification on ADB provisioning events
 
-- Let's start by setting up a simple email / SMS notification when autonomous database instances are provisioned in the user's compartment.
+- Let's start by setting up a simple email / SMS notification when Autonomous AI Database instances are provisioned in the user's compartment.
 
 - Log in to your OCI tenancy and navigate to **Developer SErvices** --> **Application Integration** --> **Notifications** from the top left hamburger menu.
 
@@ -51,9 +51,9 @@ As an database developer or administrator:
 
 - On the **Create Rule** page, provide a name and event conditions as shown in the screen shot below. A rule condition can be an event-type with one or more attributes and filter tags.
 
-    - For example, here our event-type is **Autonomous Database - Create Instance Begin** and is set on the **Database** service for compartment user04Compartment (we provide the OCID in the attribute) with a filter tag to indicate **production** instances only.
+    - For example, here our event-type is **Autonomous AI Database - Create Instance Begin** and is set on the **Database** service for compartment user04Compartment (we provide the OCID in the attribute) with a filter tag to indicate **production** instances only.
 
-    - Basically, what we are saying here is 'Trigger a notification event when an Autonomous Database with a tag tier=production is created in the compartment with OCID xyz...'.
+    - Basically, what we are saying here is 'Trigger a notification event when an Autonomous AI Database with a tag tier=production is created in the compartment with OCID xyz...'.
 
     ![This image shows the result of performing the above step.](./images/events2.png " ")
 
@@ -63,7 +63,7 @@ As an database developer or administrator:
 
     ![This image shows the result of performing the above step.](./images/events4.png " ")
 
-- That's it! To test your notification setup, create an autonomous database service instance as explained in the lab, **Provisioning Databases**, in the **Introduction to ADB Dedicated for Developers and Database Users** workshop.
+- That's it! To test your notification setup, create an Autonomous AI Database service instance as explained in the lab, **Provisioning Databases**, in the **Introduction to ADB Dedicated for Developers and Database Users** workshop.
 
 You may now **proceed to the next lab**.
 
@@ -72,7 +72,7 @@ You may now **proceed to the next lab**.
 
 - **Author** - Tejus Subrahmanya & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer
-- **Last Updated By/Date** - Kris Bhanushali, Autonomous Database Product Management, April 2022
+- **Last Updated By/Date** - Kris Bhanushali, Autonomous AI Database Product Management, April 2022
 
 
 ## See an issue or have feedback?

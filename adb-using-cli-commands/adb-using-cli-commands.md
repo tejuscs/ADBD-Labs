@@ -1,4 +1,4 @@
-# Using CLI commands to work with your Autonomous Databases
+# Using CLI commands to work with your Autonomous AI Databases
 
 ## Introduction
 
@@ -8,7 +8,7 @@ This CLI and sample is dual-licensed under the Universal Permissive License 1.0 
 
 The CLI is built on Python (version 2.7.5 or later), running on Mac, Windows, or Linux. The Python code makes calls to Oracle Cloud Infrastructure APIs to provide the functionality implemented for the various services. These are REST APIs that use HTTPS requests and responses. For more information, see [About the API](https://docs.cloud.oracle.com/iaas/Content/API/Concepts/usingapi.htm).
 
-This lab walks you through some examples using the OCI CLI for Autonomous Transaction Processing - Dedicated.
+This lab walks you through some examples using the OCI CLI for Autonomous AI Transaction Processing - Dedicated.
 
 Estimated Time: 30 minutes
 
@@ -16,12 +16,12 @@ Estimated Time: 30 minutes
 
 As a developer, DBA or DevOps user,
 
-1. Create/Destroy your autonomous database instances using a command line interface.
+1. Create/Destroy your Autonomous AI Database instances using a command line interface.
 2. Interact with Oracle Cloud Infrastructure resource using a CLI instead of a web console.
 
 ### Required Artifacts
 
-- An Oracle Cloud Infrastructure account with privileges to create dedicated autonomous databases.
+- An Oracle Cloud Infrastructure account with privileges to create dedicated Autonomous AI Databases.
 - A pre-provisioned instance of Oracle Cloud Developer Image from the OCI marketplace.
 
     *Note: The OCI Marketplace 'Developer Cloud Image' is pre-configured with many client tools and drivers including OCI command line interface.*
@@ -36,7 +36,7 @@ As a developer, DBA or DevOps user,
     $ oci --version
     </copy>
     ```
-    **The OCI CLI version needs to be 2.5.14 or higher to support dedicated autonomous database commands. Refer to the [OCI CLI Github Change Log](https://github.com/oracle/oci-cli/blob/master/CHANGELOG.rst#2514---2019-06-11) for version details.**
+    **The OCI CLI version needs to be 2.5.14 or higher to support dedicated Autonomous AI Database commands. Refer to the [OCI CLI Github Change Log](https://github.com/oracle/oci-cli/blob/master/CHANGELOG.rst#2514---2019-06-11) for version details.**
 
 ## Task 2: Configure OCI CLI
 
@@ -111,15 +111,15 @@ As a developer, DBA or DevOps user,
 
     ![This image shows the result of performing the above step.](./images/ocisetupautocomplete.png " ")
 
-## Task 4: Interacting with Oracle Autonomous Database
+## Task 4: Interacting with Oracle Autonomous AI Database
 
-- Now that you have set up OCI CLI, let us look at examples of using Autonomous Transaction Processing Database.
+- Now that you have set up OCI CLI, let us look at examples of using Autonomous AI Transaction Processing Database.
 
-- Let's start with a simpler command to get details on your autonomous database instance.
+- Let's start with a simpler command to get details on your Autonomous AI Database instance.
 
 ### *Get Database*
 
-- Open your command line interface and run the following command to get details of an Autonomous Transaction Processing Database.
+- Open your command line interface and run the following command to get details of an Autonomous AI Transaction Processing Database.
 
     ```
     <copy>
@@ -143,7 +143,7 @@ As a developer, DBA or DevOps user,
 
 ### *Listing Databases*
 
-- Open your command line interface and run the following command to list all Autonomous Transaction Processing Databases in a specific compartment.
+- Open your command line interface and run the following command to list all Autonomous AI Transaction Processing Databases in a specific compartment.
 
     ```
     <copy>
@@ -162,7 +162,7 @@ As a developer, DBA or DevOps user,
     You are expected to see the following output in the command line interface.
     ![This image shows the result of performing the above step.](./images/listdboutput1.png " ")
 
-- Run the following command to list all Autonomous Transaction Processing Databases in a specific compartment in a specific Container database.
+- Run the following command to list all Autonomous AI Transaction Processing Databases in a specific compartment in a specific Container database.
 
     ```
     <copy>
@@ -185,9 +185,9 @@ As a developer, DBA or DevOps user,
 
 ### *Creating Database*
 
-- To create an autonomous dedicated database you will need some information handy such as the OCID of the Container Database and OCID of the compartment you want to create the database in. Once you have that ready, open your command line interface and run the following command to create an Autonomous Transaction Processing (dedicated) Database.
+- To create an autonomous dedicated database you will need some information handy such as the OCID of the Container Database and OCID of the compartment you want to create the database in. Once you have that ready, open your command line interface and run the following command to create an Autonomous AI Transaction Processing (dedicated) Database.
 
-    *To find the OCID of the container database, simply navigate to your autonomous database details page and click on the link for container DB. This will take you to the container DB details page and you can copy the OCID there.*
+    *To find the OCID of the container database, simply navigate to your Autonomous AI Database details page and click on the link for container DB. This will take you to the container DB details page and you can copy the OCID there.*
         ![This image shows the result of performing the above step.](./images/containerdatabaseocid2.png " ")
 
     ```
@@ -210,7 +210,7 @@ As a developer, DBA or DevOps user,
 
 ### *Deleting Database*
 
-- Open your command line interface and run the following command to delete an Autonomous Transaction Processing Database:
+- Open your command line interface and run the following command to delete an Autonomous AI Transaction Processing Database:
 
     ```
     <copy>
@@ -231,7 +231,7 @@ As a developer, DBA or DevOps user,
 - You will be asked *Are you sure you want to delete this resource? [Y/N]* type Y to confirm.
     ![This image shows the result of performing the above step.](./images/deletedboutput1.png " ")
 
-- Log in to OCI console and navigate to Autonomous Transaction Processing Database from Menu and confirm that the database is *Terminating*.
+- Log in to OCI console and navigate to Autonomous AI Transaction Processing Database from Menu and confirm that the database is *Terminating*.
     ![This image shows the result of performing the above step.](./images/deletedboutput2.png " ")
     ![This image shows the result of performing the above step.](./images/deletedboutput3.png " ")
 
@@ -239,7 +239,7 @@ As a developer, DBA or DevOps user,
 *Similarly, you can try the following examples.*
 
 #### *Restore Databse*
-- Open your command line interface and run the following command to Restore Autonomous Transaction Processing Database.
+- Open your command line interface and run the following command to Restore Autonomous AI Transaction Processing Database.
 
     ```
     <copy>
@@ -249,7 +249,7 @@ As a developer, DBA or DevOps user,
 
 #### *Start Database*
 
-- Open your command line interface and run the following command to Start Autonomous Transaction Processing Database.
+- Open your command line interface and run the following command to Start Autonomous AI Transaction Processing Database.
 
     ```
     <copy>
@@ -259,7 +259,7 @@ As a developer, DBA or DevOps user,
 
 #### *Stop Database*
 
-- Open your command line interface and run the following command to Stop Autonomous Transaction Processing Database.
+- Open your command line interface and run the following command to Stop Autonomous AI Transaction Processing Database.
 
     ```
     <copy>
@@ -277,7 +277,7 @@ As a developer, DBA or DevOps user,
     </copy>
     ```
 
-These are a handful of examples on using the OCI CLI REST interface to work with autonomous databases in your OCI tenancy. For a complete command reference, check out [this OCI documentation](https://docs.cloud.oracle.com/iaas/tools/oci-cli/latest/oci_cli_docs/cmdref/db.html).
+These are a handful of examples on using the OCI CLI REST interface to work with Autonomous AI Databases in your OCI tenancy. For a complete command reference, check out [this OCI documentation](https://docs.cloud.oracle.com/iaas/tools/oci-cli/latest/oci_cli_docs/cmdref/db.html).
 
 Congratulations! You successfully configured Oracle Cloud Infrastructure Command Line Interface and interacted with OCI resources using CLI commands. You may now **proceed to the next lab**.
 

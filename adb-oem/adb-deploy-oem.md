@@ -1,7 +1,7 @@
-# Connecting to Autonomous Transaction Processing Dedicated from Oracle Enterprise Manager
+# Connecting to Autonomous AI Transaction Processing Dedicated from Oracle Enterprise Manager
 
 ## Introduction
-The Oracle Cloud Infrastructure marketplace provides a pre-built image with necessary client tools and drivers to deploy compute instances and connect to Autonomous Transaction Processing Dedicated. A database administrator can now connect to ATPD from Oracle Enterprise Manager and monitor the performance.
+The Oracle Cloud Infrastructure marketplace provides a pre-built image with necessary client tools and drivers to deploy compute instances and connect to Autonomous AI Transaction Processing Dedicated. A database administrator can now connect to ATPD from Oracle Enterprise Manager and monitor the performance.
 
 The image is pre-configured and installed with Oracle Enterprise manager.
 For a complete list of features, log in to your OCI account, select **Marketplace** from the top left menu and browse details on the **Enterprise Manager 13c Workshop v3.0**.
@@ -19,7 +19,7 @@ As a Database Administrator:
 ### Required Artifacts
 
    - An Oracle Cloud Infrastructure account.
-   - A pre-provisioned dedicated autonomous database instance. Refer to the **Provisioning Databases** lab in the **Introduction to ADB Dedicated for Developers and Database Users** workshop.
+   - A pre-provisioned dedicated Autonomous AI Database instance. Refer to the **Provisioning Databases** lab in the **Introduction to ADB Dedicated for Developers and Database Users** workshop.
    - A pre-provisioned compute instance of Image type "Enterprise Manager 13c Workshop v3.0"
 
 ## Task 1: Create a Compute Instance with OEM installed in it
@@ -70,10 +70,10 @@ As a Database Administrator:
 
 ## Task 3: Transfer database wallet to developer client
 
-- Log in to your Oracle Cloud Infrastructure account and select **Autonomous Transaction Processing** from the menu.
+- Log in to your Oracle Cloud Infrastructure account and select **Autonomous AI Transaction Processing** from the menu.
     ![](./images/atpd1.png " ")
 
-- Click **Autonomous Database** and select your previously created database.
+- Click **Autonomous AI Database** and select your previously created database.
     ![](./images/atpd2.png " ")
 
 - Click **DB Connection**. Under **Download Client Credential(Wallet)**, click **Download**.
@@ -84,7 +84,7 @@ As a Database Administrator:
 
     The credentials zip file contains the encryption wallet, Java keystore and other relevant files to make a secure TLS 1.2 connection to your database from client applications. Store this file in a secure location.
 
-## Task 4: Add Autonomous Transaction Processing Database dedicated as Target in OEM
+## Task 4: Add Autonomous AI Transaction Processing Database dedicated as Target in OEM
 
 - Click **Setup** and select **Add Target** and click **Add Targets Manually**.
 
@@ -100,7 +100,7 @@ As a Database Administrator:
 
     ![This image shows the result of performing the above step.](./images/atpd8.png " ")
 
-- Select Target Type **Autonomous Transaction Processing** and click **Add..**.
+- Select Target Type **Autonomous AI Transaction Processing** and click **Add..**.
 
     ![This image shows the result of performing the above step.](./images/atpd9.png " ")
 
@@ -136,7 +136,7 @@ As a Database Administrator:
 
     ![This image shows the result of performing the above step.](./images/atpd16.png " ")
 
-- Under **Databases** select **Autonomous Transaction Processing**.
+- Under **Databases** select **Autonomous AI Transaction Processing**.
 
     ![This image shows the result of performing the above step.](./images/atpd17.png " ")
 
@@ -195,7 +195,7 @@ As a Database Administrator:
 You may now **proceed to the next lab**.
 
 ## Acknowledgements
-*Congratulations! You have successfully established connection to Autonomous Transaction Processing Dedicated Database from OEM .*
+*Congratulations! You have successfully established connection to Autonomous AI Transaction Processing Dedicated Database from OEM .*
 
 - **Authors** - Navya M S & Padma Priya Natarajan
 - **Last Updated By/Date** - Kris Bhanushali, March 2022

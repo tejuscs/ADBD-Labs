@@ -1,9 +1,9 @@
 # Customer Controlled Database Encryption Keys
 
 ## Introduction
-The Autonomous database service allows customers to retain control of the database encryption master keys. Keys are stored in an HSM based Vault service in OCI and are accessed by the database for encryption / decryption of data keys. No human operator has access to the keys once they are in the vault. Customers retain full control of their key vault and can disable / delete keys as required.
+The Autonomous AI Database service allows customers to retain control of the database encryption master keys. Keys are stored in an HSM based Vault service in OCI and are accessed by the database for encryption / decryption of data keys. No human operator has access to the keys once they are in the vault. Customers retain full control of their key vault and can disable / delete keys as required.
 
-Each autonomous container database (ACD) and each autonomous database (ADB) within it can have its own unique master encryption key (MEK). Keys may be rotated at desired frequency either through console UI or using REST APIs.
+Each autonomous container database (ACD) and each Autonomous AI Database (ADB) within it can have its own unique master encryption key (MEK). Keys may be rotated at desired frequency either through console UI or using REST APIs.
 
 [This is an introductory YouTube video.](youtube:JoAJ7lAgdkA)
 
@@ -23,7 +23,7 @@ As a database security administrator:
 
 ## Task 1: Create a Vault and Key in OCI Vault service
 
-The first step is for a security admin responsible for all encryption keys to login to the OCI Vault service and create a Vault for storing autonomous database keys. Oracle Vault is an OCI service for storing encryption keys, certificates and other secrets. Keys are stored in a FIPS-140 Security Level 3 certified HSM module. Check out [OCI Vault documentation](https://docs.cloud.oracle.com/en-us/iaas/Content/KeyManagement/Concepts/keyoverview.htm) for details.
+The first step is for a security admin responsible for all encryption keys to login to the OCI Vault service and create a Vault for storing Autonomous AI Database keys. Oracle Vault is an OCI service for storing encryption keys, certificates and other secrets. Keys are stored in a FIPS-140 Security Level 3 certified HSM module. Check out [OCI Vault documentation](https://docs.cloud.oracle.com/en-us/iaas/Content/KeyManagement/Concepts/keyoverview.htm) for details.
 
 - Log in to your OCI tenancy and navigate to the Vault service from the main hamburger menu.
 
@@ -31,7 +31,7 @@ The first step is for a security admin responsible for all encryption keys to lo
 
 - Choose a compartment where you would like to keep your Vault.
 
-**As a best practice, plan and create a compartment hierarchy such that all autonomous database related Vaults and Keys are in a separate compartment and isolated by business unit, application etc.**
+**As a best practice, plan and create a compartment hierarchy such that all Autonomous AI Database related Vaults and Keys are in a separate compartment and isolated by business unit, application etc.**
 
 - Click **Create Vault** and provide a name.
 
@@ -128,7 +128,7 @@ You are now ready to create an Autonomous Container Database with customer contr
 
 That is it. You ACD will now be encrypted using an AES 256 key created and held by you in the Key Vault.
 
-Every Autonomous Database provisioned in this ACD will be encrypted using a separate encryption key. There is no action required at the time of provisioning ADB thereby making the key management operation transparent to the ADB consumer.
+Every Autonomous AI Database provisioned in this ACD will be encrypted using a separate encryption key. There is no action required at the time of provisioning ADB thereby making the key management operation transparent to the ADB consumer.
 
 - However, both the ACD Fleet Admin and the ADB admin/developer may rotate ACD or ADB keys from the database console or via REST APIs.
 
@@ -137,10 +137,10 @@ Every Autonomous Database provisioned in this ACD will be encrypted using a sepa
 The ADB Key rotation option is under **More Action** drop down button on the database console.
 
 ## Acknowledgements
-*Congratulations! You successfully configured the Key Vault Service to work with your Autonomous Databases*
+*Congratulations! You successfully configured the Key Vault Service to work with your Autonomous AI Databases*
 
 - **Author** - Kris Bhanushali
-- **Last Updated By/Date** -  Kris Bhanushali, Autonomous Database Product Management, March 2022
+- **Last Updated By/Date** -  Kris Bhanushali, Autonomous AI Database Product Management, March 2022
 
 ## See an issue or have feedback?  
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!

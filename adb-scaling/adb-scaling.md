@@ -1,7 +1,7 @@
-# Test online scaling capabilities of the autonomous database service
+# Test online scaling capabilities of the Autonomous AI Database service
 
 ## Introduction
-Continuous uptime is a key requirement of most business critical applications. While the cloud provides the notion of unlimited scale, this scalability comes at a cost of downtime with most services. The Oracle autonomous database service provides scalability without downtime as demonstrated in this lab.
+Continuous uptime is a key requirement of most business critical applications. While the cloud provides the notion of unlimited scale, this scalability comes at a cost of downtime with most services. The Oracle Autonomous AI Database service provides scalability without downtime as demonstrated in this lab.
 
 Estimated Time: 20 minutes
 
@@ -9,14 +9,14 @@ Estimated Time: 20 minutes
 
 As an administrator:
 1. Simulate a production workload using Swingbench load generator.
-2. Scale up the OCPUs in your autonomous database service through cloud console and observe effect on the workload performance.
-3. Scale down the OCPUs in your autonomous database service through cloud console and observe effect on the workload performance.
+2. Scale up the OCPUs in your Autonomous AI Database service through cloud console and observe effect on the workload performance.
+3. Scale down the OCPUs in your Autonomous AI Database service through cloud console and observe effect on the workload performance.
 
 ### Required Artifacts
 
 - An Oracle Cloud Infrastructure account.
 - A pre-provisioned instance of Oracle Developer Client image configured with Swingbench in an application subnet. Refer to the earlier lab, **Build Always On Applications**.
-- A pre-provisioned Autonomous Transaction Processing instance. Refer to the earlier lab, **Provisioning Databases**.
+- A pre-provisioned Autonomous AI Transaction Processing instance. Refer to the earlier lab, **Provisioning Databases**.
 - Successful completion of the earlier labs, **Configure a Development System** and **Build Always On Applications**.
 
 ## Task 1: Log in to the Oracle Cloud Developer image and start the order entry workload
@@ -55,9 +55,9 @@ As an administrator:
 
     ![This image shows the result of performing the above step.](./images/swingbenchoutput.jpeg " ")
 
-## Task 2: Scale up the OCPUs in your autonomous database service
+## Task 2: Scale up the OCPUs in your Autonomous AI Database service
 
-Now, let's scale the autonomous database you created in previous labs from 1 OCPU to 2 or more while Swingbench continues running. You should see the transactions/sec numbers start changing as your database is scaling. Please note that this is also highly influenced by the connection service your are using with the *-cs* parameter. In the statement above we are using the *\_tp* service, but while you are experimenting, stop and start Swingbench with a different service, such as *\_low*, or *\_high* to see what differences you observe.
+Now, let's scale the Autonomous AI Database you created in previous labs from 1 OCPU to 2 or more while Swingbench continues running. You should see the transactions/sec numbers start changing as your database is scaling. Please note that this is also highly influenced by the connection service your are using with the *-cs* parameter. In the statement above we are using the *\_tp* service, but while you are experimenting, stop and start Swingbench with a different service, such as *\_low*, or *\_high* to see what differences you observe.
 
 - To scale the system, go to your Cloud Database Console and select **Manage Scaling**:
 
@@ -74,7 +74,7 @@ Now, let's scale the autonomous database you created in previous labs from 1 OCP
 You may now **proceed to the next lab**.
 
 ## Acknowledgements
-*Congratulations! You successfully tested online scaling capabilities of your autonomous database service.*
+*Congratulations! You successfully tested online scaling capabilities of your Autonomous AI Database service.*
 
 - **Author** - Tejus S. & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer

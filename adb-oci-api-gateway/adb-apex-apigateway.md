@@ -1,4 +1,4 @@
-# OCI API Gateway with Autonomous Database Dedicated
+# OCI API Gateway with Autonomous AI Database Dedicated
 
 
 ## Introduction
@@ -10,7 +10,7 @@ The API Gateway service enables you to publish APIs with private endpoints that 
 
 To learn more about this OCI API Gateway [click here] (https://docs.oracle.com/en-us/iaas/Content/APIGateway/Concepts/apigatewayoverview.htm).  
 
-Combining Oracle APEX on Autonomous Database on Dedicated Infrastructure with OCI API Gateway unlocks the potential of making your data, highly-available without exposing security concerns to the outside world.
+Combining Oracle APEX on Autonomous AI Database on Dedicated Infrastructure with OCI API Gateway unlocks the potential of making your data, highly-available without exposing security concerns to the outside world.
 
 Estimated Time: 20 minutes
 
@@ -22,7 +22,7 @@ Estimated Time: 20 minutes
 ### Required Artifacts
 
 - An Oracle Cloud Infrastructure account.
-- A pre-provisioned Autonomous Transaction Processing instance. Refer to the lab **Provisioning Databases** in the **Autonomous Database Dedicated for Developers and Database Users** workshop on how to provision an ATP database.
+- A pre-provisioned Autonomous AI Transaction Processing instance. Refer to the lab **Provisioning Databases** in the **Autonomous AI Database Dedicated for Developers and Database Users** workshop on how to provision an ATP database.
 - A jump host to access the database that resides in the private subnet.
 
 ## Task 1: Setup ADB-D and Load data into the database
@@ -131,10 +131,10 @@ select * from employee where contains (EMPLOYEE_FIRST_NAME, 'Ryan or Senior') > 
 You may now **proceed to the next lab**.
 
 ## Acknowledgements
-*Congratulations! You have successfully configured Oracle Autonomous Database on Dedicated Infrastructure with APIs using Oracle Apex and enabled the APIs for Internet Traffic using OCI API Gateway with simulated APIs*
+*Congratulations! You have successfully configured Oracle Autonomous AI Database on Dedicated Infrastructure with APIs using Oracle Apex and enabled the APIs for Internet Traffic using OCI API Gateway with simulated APIs*
 
 - **Author** - Phani Turlapati
-- **Last Updated By/Date** - Phani Turlapati, Autonomous Database Product Management, January 2023
+- **Last Updated By/Date** - Phani Turlapati, Autonomous AI Database Product Management, January 2023
 
 ## See an issue or have feedback?  
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as the workshop name, include Lab name and issue/feedback details. Thank you!

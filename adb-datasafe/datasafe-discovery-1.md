@@ -1,7 +1,7 @@
 # Discover Sensitive Data with Oracle Data Safe
 
 ## Introduction
-Using Oracle Data Safe, discover sensitive data in your Autonomous database with the Data Discovery wizard and identify dictionary-based and non-dictionary referential relationships, in a sensitive data model, to modify and analyze results and reports.
+Using Oracle Data Safe, discover sensitive data in your Autonomous AI Database with the Data Discovery wizard and identify dictionary-based and non-dictionary referential relationships, in a sensitive data model, to modify and analyze results and reports.
 
 To log issues and view the Lab Guide source, go to the [GitHub Oracle Learning Library](https://github.com/oracle/learning-library/issues/new) repository.
 
@@ -30,7 +30,7 @@ While you are working on the challenge, think about the following questions:
 
 ## Task 1: Use the Data Discovery wizard to discover sensitive data
 
-- Sign in to your OCI tenancy and navigate to the Autonomous database conole page for the database you wish to secure.
+- Sign in to your OCI tenancy and navigate to the Autonomous AI Database conole page for the database you wish to secure.
 
 - On the ADB details page - - Click on View Console under **Data Safe** status.
 
@@ -182,7 +182,7 @@ You may now **proceed to the next lab**.
 *Great Work! You successfully completed the Data Safe Discovery Lab 1*
 
 - **Author** - Jayshree Chatterjee
-- **Last Updated By/Date** - Kris Bhanushali, Autonomous Database Product Management, March 2022
+- **Last Updated By/Date** - Kris Bhanushali, Autonomous AI Database Product Management, March 2022
 
 ## See an issue or have feedback?  
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!

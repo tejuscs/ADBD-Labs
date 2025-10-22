@@ -11,7 +11,7 @@ In this lab, you learn how to do the following:
 - Manually update a sensitive data model stored in the Library
 
 ### Challenge
-1. Connect to your Autonomous Database as **ADMIN** user with SQL Developer.
+1. Connect to your Autonomous AI Database as **ADMIN** user with SQL Developer.
 2. In SQL Developer, add a column to one of the tables in your target database. For example, add an `AGE` column to the `HCM1.EMPLOYEES` table. Gather schema statistics on your database.
 3. Sign in to the Oracle Data Safe Console in your region.
 4. In Oracle Data Safe, verify your sensitive data model (**username SDM1**) against your target database by using the verification option on the **Sensitive Data Models** page in the Library. What does the verification test find?
@@ -172,7 +172,7 @@ You may now **proceed to the next lab**.
 *Great Work! You successfully completed the Data Safe Discovery Lab 2*
 
 - **Author** - Jayshree Chatterjee
-- **Last Updated By/Date** - Kris Bhanushali, Autonomous Database Product Management, March 2022
+- **Last Updated By/Date** - Kris Bhanushali, Autonomous AI Database Product Management, March 2022
 
 
 ## See an issue or have feedback?  

@@ -1,8 +1,8 @@
-# Database In-Memory on Autonomous Database Dedicated
+# Database In-Memory on Autonomous AI Database Dedicated
 
 ## Introduction
 
-This lab walks you through enabling the In-Memory feature and configuring objects to use the In-Memory column store on an Autonomous Database on Exadata Cloud@Customer and Dedicated Infrastructure (ADB-D). 
+This lab walks you through enabling the In-Memory feature and configuring objects to use the In-Memory column store on an Autonomous AI Database on Exadata Cloud@Customer and Dedicated Infrastructure (ADB-D). 
 
 Oracle Database In-Memory adds columnar functionality to Oracle Databases for transparently accelerating analytic queries by orders of magnitude. Oracle Database In-Memory enables decision-making based on real-time data to lower costs, improve productivity, and increase competitiveness.
 
@@ -10,18 +10,18 @@ Estimated Time: 15 minutes
 
 ### Objectives
 
-As an Autonomous Database administrator:
-1. Enable In-Memory on an existing Autonomous Database 
+As an Autonomous AI Database administrator:
+1. Enable In-Memory on an existing Autonomous AI Database 
 2. Enable database tables to store data in the IM Column store
 3. Run a workload against the IM objects to validate performance gains.  
 
 ### Required Artifacts
 
 - An Oracle Cloud Infrastructure account with a pre-provisioned Exadata Infrastructure and Autonomous Container Database
-- A pre-provisioned Autonomous Transaction Processing or Autonomous Datawarehouse instance. Refer to the lab **Provisioning Databases** in the **Autonomous Database Dedicated for Developers and Database Users** workshop on how to provision an Autonomous database.
+- A pre-provisioned Autonomous AI Transaction Processing or Autonomous Datawarehouse instance. Refer to the lab **Provisioning Databases** in the **Autonomous AI Database Dedicated for Developers and Database Users** workshop on how to provision an Autonomous AI Database.
     - minimum ADB version is 19.20.0.1
     - minimum of 4 OCPU to enable IM option on ADB-D
-- Ability to connect to your In-Memory enabled ADB with SQLPlus/SQLcl.  If needed follow the lab **Configure a development system for use with your dedicated autonomous database**
+- Ability to connect to your In-Memory enabled ADB with SQLPlus/SQLcl.  If needed follow the lab **Configure a development system for use with your dedicated Autonomous AI Database**
 
 ## Task 1: Enable In-Memory
 
@@ -29,9 +29,9 @@ As an Autonomous Database administrator:
 
 ![This image shows the result of performing the above step.](./images/adb_create.jpg)
 
-- Log in to your OCI tenancy and navigate to Oracle Database and select Autonomous Database from the main menu.
+- Log in to your OCI tenancy and navigate to Oracle Database and select Autonomous AI Database from the main menu.
 
-- Select the Compartment where your Autonomous Database is located.  
+- Select the Compartment where your Autonomous AI Database is located.  
 
 - Click your ADB resource name.
 
@@ -51,7 +51,7 @@ As an Autonomous Database administrator:
 
 **Note:** Even though the amount of memory available is based on OCPU, the slider is based on a percentage of the total memory available in the SGA of the ADB instance.
 
-- The ADB will go into "SCALING IN PROGRESS" status while the IM parameters are applied to the Autonomous Container and Autonomous Database. 
+- The ADB will go into "SCALING IN PROGRESS" status while the IM parameters are applied to the Autonomous Container and Autonomous AI Database. 
 
 ![This image shows the result of performing the above step.](./images/scalinginprogress.jpg)
 
@@ -139,7 +139,7 @@ The above workload is a small data set and is running on a very fast infrastruct
     ```
 
 ## Acknowledgements
-*Congratulations! You successfully enabled and tested the In-Memory option in your Autonomous Database on Dedicated Infrastructure environment.*
+*Congratulations! You successfully enabled and tested the In-Memory option in your Autonomous AI Database on Dedicated Infrastructure environment.*
 
 - **Author** - Jeffrey C
 - **Last Updated By/Date** -  Jeffrey C, August 2023

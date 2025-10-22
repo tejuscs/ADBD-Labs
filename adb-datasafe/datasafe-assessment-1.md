@@ -94,7 +94,7 @@ In this lab, you learn how to do the following:
 
     ![This image shows the result of performing the above step.](./images/img10.jpg " ")
 
-6. Review the Details section in this finding and answer these questions: How many audit trails exist in your database and how many of those trails contain audit records? The report states that Security Assessment examined two audit trails and found records in one audit trail. There's only one audit trail because Autonomous Transaction Processing databases are in pure unified audit mode.
+6. Review the Details section in this finding and answer these questions: How many audit trails exist in your database and how many of those trails contain audit records? The report states that Security Assessment examined two audit trails and found records in one audit trail. There's only one audit trail because Autonomous AI Transaction Processing databases are in pure unified audit mode.
 
 *Note: You do not need to do anything on your database because your database already has unified auditing policies enabled.*
 
@@ -138,7 +138,7 @@ You may now **proceed to the next lab**.
 *Great Work! You successfully completed the Data Safe Assessment Lab 1*
 
 - **Author** - Jayshree Chatterjee
-- **Last Updated By/Date** - Kris Bhanushali, Autonomous Database Product Management, March 2022
+- **Last Updated By/Date** - Kris Bhanushali, Autonomous AI Database Product Management, March 2022
 
 
 ## See an issue or have feedback?  

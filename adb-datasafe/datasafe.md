@@ -1,6 +1,6 @@
 # Data Safe with Autonomous Dedicated
 ## Introduction
-Data Safe is a unified security control center for your Oracle Autonomous Databases in OCI. Data Safe provides security automation to easily detect PII and other sensitive data elements in your autonomous databases, create masked clones for test/dev, assess and monitor user security, centralize audit data and generate security and compliance reports. Data Safe also works on your on-premises Oracle databases and other OCI database services.
+Data Safe is a unified security control center for your Oracle Autonomous AI Databases in OCI. Data Safe provides security automation to easily detect PII and other sensitive data elements in your Autonomous AI Databases, create masked clones for test/dev, assess and monitor user security, centralize audit data and generate security and compliance reports. Data Safe also works on your on-premises Oracle databases and other OCI database services.
 
 This workshop walks you through the steps to get started using Oracle Data Safe with ADB Dedicated on Oracle Cloud Infrastructure.
 
@@ -41,7 +41,7 @@ This workshop comprises various aspects of Data Security. So follow the given se
 You may now **proceed to the next lab**.
 
 ## Acknowledgements
-- **Last Updated By/Date** - Kris Bhanushali, Autonomous Database Product Management, March 2022
+- **Last Updated By/Date** - Kris Bhanushali, Autonomous AI Database Product Management, March 2022
 
 ## See an issue or have feedback?  
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!

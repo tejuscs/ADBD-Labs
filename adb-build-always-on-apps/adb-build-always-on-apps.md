@@ -1,8 +1,8 @@
-# Build 'Always-On' applications on the Autonomous Database
+# Build 'Always-On' applications on the Autonomous AI Database
 
 
 ## Introduction
-The Oracle Autonomous Database allows you to build 'Always-On' applications. i.e. applications need not go down during planned maintenance operations on the database, database scaling or even unplanned database outages such as node failures. This is possible due to a feature of the Oracle Autonomous Database called 'Transparent Application Continuity'.
+The Oracle Autonomous AI Database allows you to build 'Always-On' applications. i.e. applications need not go down during planned maintenance operations on the database, database scaling or even unplanned database outages such as node failures. This is possible due to a feature of the Oracle Autonomous AI Database called 'Transparent Application Continuity'.
 
 TAC uses a combination of Oracle RAC, Oracle Notification Service (ONS), Transparent Application Failover and Application Replay to cleanly failover your application to a surviving node and replaying in-transit transaction to provide a seamless user experience.
 
@@ -20,12 +20,12 @@ As an administrator:
 ### Required Artifacts
 
 - An Oracle Cloud Infrastructure account.
-- A pre-provisioned instance of Oracle Developer Client image in an application subnet. Refer to the lab **Configuring a Development System** in the **Autonomous Database Dedicated for Developers and Database Users** workshop on how provision a developer client.
-- A pre-provisioned Autonomous Transaction Processing instance. Refer to the lab **Provisioning Databases** in the **Autonomous Database Dedicated for Developers and Database Users** workshop on how to provision an ATP database.
+- A pre-provisioned instance of Oracle Developer Client image in an application subnet. Refer to the lab **Configuring a Development System** in the **Autonomous AI Database Dedicated for Developers and Database Users** workshop on how provision a developer client.
+- A pre-provisioned Autonomous AI Transaction Processing instance. Refer to the lab **Provisioning Databases** in the **Autonomous AI Database Dedicated for Developers and Database Users** workshop on how to provision an ATP database.
 
 ## Task 1: Download and install Swingbench
 
-- We will start with downloading and installing Swingbench in a developer client virtual machine provisioned in the lab **Configuring a Development System** in the **Autonomous Database Dedicated for Developers and Database Users** workshop.
+- We will start with downloading and installing Swingbench in a developer client virtual machine provisioned in the lab **Configuring a Development System** in the **Autonomous AI Database Dedicated for Developers and Database Users** workshop.
 
 - Connect to your developer client machine via VNC. Detailed instructions are provided in that lab, **Configuring a Development System**.
 
@@ -71,14 +71,14 @@ As an administrator:
 ### Transfer DB Wallet to swingbench client machine
 Unless you have already moved the wallet to your Dev Client machine in an earlier lab, follow these steps.
 
-- Create a VNC connection to your machine following steps in the lab **Configuring a Development System** in the **Autonomous Database Dedicated for Developers and Database Users** workshop.
+- Create a VNC connection to your machine following steps in the lab **Configuring a Development System** in the **Autonomous AI Database Dedicated for Developers and Database Users** workshop.
 - Open up Firefox in your VNC terminal from the Applications menu on the top left.
    -  Once Firefox is open, go to **cloud.oracle.com**.
 
-- Log in to Oracle Cloud Infrastructure account and select **Autonomous Transaction Processing** from the menu.
+- Log in to Oracle Cloud Infrastructure account and select **Autonomous AI Transaction Processing** from the menu.
     ![This image shows the result of performing the above step.](./images/atpd1.png " ")
 
-- Click **Autonomous Database** and select your previously created database.
+- Click **Autonomous AI Database** and select your previously created database.
 
     ![This image shows the result of performing the above step.](./images/atpd2.png " ")
 
@@ -277,7 +277,7 @@ You may now **proceed to the next lab**.
 
 - **Author** - Tejus S. & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer
-- **Last Updated By/Date** - Kris Bhanushali, Autonomous Database Product Management, March 2022
+- **Last Updated By/Date** - Kris Bhanushali, Autonomous AI Database Product Management, March 2022
 
 ## See an issue or have feedback?  
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!

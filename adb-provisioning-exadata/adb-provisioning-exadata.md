@@ -1,8 +1,8 @@
 
-# Provisioning a Cloud Exadata Infrastructure for Autonomous Database in OCI
+# Provisioning a Cloud Exadata Infrastructure for Autonomous AI Database in OCI
 
 ## Introduction
-A Cloud Exadata Infrastructure resource is the top-level (parent) resource for Autonomous Database on Dedicated Infrastructure. At the infrastructure level, you control the number of database and storage servers. You also control Exadata system maintenance scheduling at the Exadata infrastructure level. You must create at least one Exadata Infrastructure resource before you can create any of the other kinds of dedicated infrastructure resources such as Autonomous Container Databases or simply an Autonomous Database instance.
+A Cloud Exadata Infrastructure resource is the top-level (parent) resource for Autonomous AI Database on Dedicated Infrastructure. At the infrastructure level, you control the number of database and storage servers. You also control Exadata system maintenance scheduling at the Exadata infrastructure level. You must create at least one Exadata Infrastructure resource before you can create any of the other kinds of dedicated infrastructure resources such as Autonomous Container Databases or simply an Autonomous AI Database instance.
 
 
 Estimated Time: 20 minutes

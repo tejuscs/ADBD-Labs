@@ -5,7 +5,7 @@ Oracle Cloud Infrastructure tagging allows you to add metadata to resources, def
 
 To enable customers to manage OCI resources securely and cost-effectively, Oracle provides a set of pre-defined tags in line with best practices for tagging resources. These tags are grouped into two namespaces - The **OracleStandard** namespace and the **OracleApplicationName** namespace.
 
-This lab walks you through the steps to import Oracle Standard Tags into your tenancy, create and edit tag key definitions, and use the standard tags with your Autonomous Database.
+This lab walks you through the steps to import Oracle Standard Tags into your tenancy, create and edit tag key definitions, and use the standard tags with your Autonomous AI Database.
 
 Estimated Time: 20 minutes
 
@@ -90,27 +90,27 @@ OCI Governance Administrators can add additional **Values** to an existing Tag K
     ![This image shows the result of performing the above step.](./images/tag13.png " ")
 
 
-## Task 3: Use Standard Tags with Autonomous Database
+## Task 3: Use Standard Tags with Autonomous AI Database
 
 Tags can be added either at the time of creation of a resource, or by navigating to an existing resource and adding it.
 
-- Click the menu and navigate to **Autonomous Database**. Choose an Autonomous Database type, such as **Autonomous Transaction Processing**.
+- Click the menu and navigate to **Autonomous AI Database**. Choose an Autonomous AI Database type, such as **Autonomous AI Transaction Processing**.
 
     ![This image shows the result of performing the above step.](./images/tag14.png " ")
 
-- Click **Create Autonomous Database**, and enter all the required fields.
+- Click **Create Autonomous AI Database**, and enter all the required fields.
 
-You can learn how to create Autonomous Database in the **Provisioning an Autonomous Transaction Processing Database Instance** lab in the **Oracle Autonomous Database Dedicated for Developers and Database Users** LiveLabs workshop.
+You can learn how to create Autonomous AI Database in the **Provisioning an Autonomous AI Transaction Processing Database Instance** lab in the **Oracle Autonomous AI Database Dedicated for Developers and Database Users** LiveLabs workshop.
 
-- Scroll down to the bottom of the **Create Autonomous Database** page, and click **Show Advanced Options**.
+- Scroll down to the bottom of the **Create Autonomous AI Database** page, and click **Show Advanced Options**.
 
     ![This image shows the result of performing the above step.](./images/tag15.png " ")
 
-- Select **Tags** and select **Oracle-Standard** under **Tag Namespace**. Select the appropriate **Tag Key** and click **Create Autonomous Database**.
+- Select **Tags** and select **Oracle-Standard** under **Tag Namespace**. Select the appropriate **Tag Key** and click **Create Autonomous AI Database**.
 
     ![This image shows the result of performing the above step.](./images/tag16.png " ")
 
-- You can also add Tags to an existing Autonomous Database. Select the Autonomous Database in which you would like to add the Tags, and click **Tags** in the **Autonomous Database Details** page.
+- You can also add Tags to an existing Autonomous AI Database. Select the Autonomous AI Database in which you would like to add the Tags, and click **Tags** in the **Autonomous AI Database Details** page.
 
     ![This image shows the result of performing the above step.](./images/tag17.png " ")
 
@@ -124,7 +124,7 @@ You may now **proceed to the next lab**.
 
 ## Acknowledgements
 
-- **Author** - Tejus S., Autonomous Database Product Management
+- **Author** - Tejus S., Autonomous AI Database Product Management
 - **Adapted by** -  Rick Green
 - **Last Updated By/Date** - Tejus S., April 2022
 

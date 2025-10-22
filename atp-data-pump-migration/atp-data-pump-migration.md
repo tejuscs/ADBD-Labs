@@ -1,7 +1,7 @@
 # Migrating to Dedicated ATP using Data Pump
 
 ## Introduction
-Oracle Data Pump offers very fast bulk data and metadata movement between user managed Oracle databases and Autonomous Transaction Processing.
+Oracle Data Pump offers very fast bulk data and metadata movement between user managed Oracle databases and Autonomous AI Transaction Processing.
 
 Data Pump Import lets you import data from Data Pump files residing on the Oracle Cloud Infrastructure Object Storage. You can save your data to your Cloud Object Store and use Oracle Data Pump to load data to dedicated ATP database.
 
@@ -19,7 +19,7 @@ As a database admin or user:
 
 
 ### Required Artifacts
-- An Oracle Cloud Infrastructure account with privileges to create object storage buckets and dedicated autonomous databases.
+- An Oracle Cloud Infrastructure account with privileges to create object storage buckets and dedicated Autonomous AI Databases.
 - Access to a pre-provisioned dedicated ATP instance.
 - A pre-provisioned instance of Oracle Developer Client image in an application subnet.
 
@@ -60,11 +60,11 @@ As a database admin or user:
 - Provide any desired name and copy the generated token string some place in a text editor. You will need this token while configuring cloud credentials on your target database.
     ![This image shows the result of performing the above step.](./images/get-token3.png " ")
 
-## Task 4: Set up Object Store user credentials in your target autonomous database
+## Task 4: Set up Object Store user credentials in your target Autonomous AI Database
 
 - Now that we have the credentials token, let's set up the target database to read from the object store and import data.
 
-- Log into your dedicated autonomous database as admin using either SQL Developer or SQLCL client.
+- Log into your dedicated Autonomous AI Database as admin using either SQL Developer or SQLCL client.
 
     **TWO ways to do this:**
 
@@ -74,7 +74,7 @@ As a database admin or user:
 
 Here, we will use a local SQL Developer to demonstrate the steps needed to set up object store credentials.
 
-- Once connected to your autonomous database as user 'admin', run the following pl/sql procedure, replacing username and password with your own cloud credentials.
+- Once connected to your Autonomous AI Database as user 'admin', run the following pl/sql procedure, replacing username and password with your own cloud credentials.
 
     ```
     <copy>
@@ -134,7 +134,7 @@ Here, we will use a local SQL Developer to demonstrate the steps needed to set u
 
 - In the above command, replace the following:
 
-    *password* - Admin password for your autonomous database
+    *password* - Admin password for your Autonomous AI Database
 
     *connect\_string* - Connect string obtained from database console; it would be something like myDatabase_high
 
@@ -155,7 +155,7 @@ Here, we will use a local SQL Developer to demonstrate the steps needed to set u
 
 All Done! Your application schema was successfully imported. Note that once uploaded to object store, the dump file was in a private bucket with no visibility outside of your tenancy namespace. This is important so your data file is not accessible to anyone on the internet.
 
-You may now connect to your autonomous database using a SQL client and validate import.
+You may now connect to your Autonomous AI Database using a SQL client and validate import.
 
 You may now **proceed to the next lab**.
 

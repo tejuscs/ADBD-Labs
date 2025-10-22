@@ -1,7 +1,7 @@
 # Provisioning an Autonomous Container Database
 
 ## Introduction
-An Autonomous Container Database resource provides a container for your Autonomous Databases. You can create multiple Autonomous Container Database resources in an Autonomous Exadata VM Cluster resource, but you must create at least one ACD before you can create any Autonomous Databases.
+An Autonomous Container Database resource provides a container for your Autonomous AI Databases. You can create multiple Autonomous Container Database resources in an Autonomous Exadata VM Cluster resource, but you must create at least one ACD before you can create any Autonomous AI Databases.
 
 Estimated Time: 20 mins
 
@@ -14,7 +14,7 @@ As a fleet administrator:
 
 ### Required Artifacts
 
-- An Oracle Cloud Infrastructure account with fleet administrator privileges. For a detailed description of required IAM policies, please refer to the [documentation on IAM policies](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbdf/) in the Autonomous Database Dedicated documentation set.
+- An Oracle Cloud Infrastructure account with fleet administrator privileges. For a detailed description of required IAM policies, please refer to the [documentation on IAM policies](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbdf/) in the Autonomous AI Database Dedicated documentation set.
 
 Watch the video below for an overview of creating an Autonomous Container Database.
 
@@ -24,7 +24,7 @@ Watch the video below for an overview of creating an Autonomous Container Databa
 
 *Log in to your OCI account as a fleet administrator*
 
-- Navigate to the **Autonomous Database or Autonomous Database Dedicated** option under **Oracle Database** in the top left hamburger menu from your OCI home screen.
+- Navigate to the **Autonomous AI Database or Autonomous AI Database Dedicated** option under **Oracle Database** in the top left hamburger menu from your OCI home screen.
 
 - Pick **Autonomous Container Database** from the three option, make sure you have selected the compartment hosting your exadata infrastructure and click the blue **Create Autonomous Container Database** button.
 
@@ -48,7 +48,7 @@ Watch the video below for an overview of creating an Autonomous Container Databa
 
     ![This image shows the result of performing the above step.](./images/create-acd4.png " ")
 
-- If creating the Autonomous Container Database on Exadata Cloud@Customer, configure the backup destination to be used for backups of Autonomous Databases created in the Autonomous Container Database. Select a Backup Destination Type and then specify options based on the selected type.
+- If creating the Autonomous Container Database on Exadata Cloud@Customer, configure the backup destination to be used for backups of Autonomous AI Databases created in the Autonomous Container Database. Select a Backup Destination Type and then specify options based on the selected type.
 
     ![This image shows the result of performing the above step.](./images/create-acd9.png " ")
 

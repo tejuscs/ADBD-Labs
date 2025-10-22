@@ -161,7 +161,7 @@ You may now **proceed to the next lab**.
 *Great Work! You successfully completed the Data Safe Auditing Lab 1*
 
 - **Author** - Jayshree Chatterjee
-- **Last Updated By/Date** - Kris Bhanushali, Autonomous Database Product Management, March 2022
+- **Last Updated By/Date** - Kris Bhanushali, Autonomous AI Database Product Management, March 2022
 
 
 ## See an issue or have feedback?  

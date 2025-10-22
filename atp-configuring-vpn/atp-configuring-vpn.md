@@ -19,7 +19,7 @@ As a network or fleet admin:
 ### Required Artifacts
 
 - An Oracle Cloud Infrastructure account with privileges to create compute instance and network resources
-- A pre-provisioned dedicated Oracle Autonomous Database instance in a private network
+- A pre-provisioned dedicated Oracle Autonomous AI Database instance in a private network
 - A pre-provisioned Virtual Cloud Network with public and private subnets setup with appropriate security lists. Refer to the earlier lab **Prepare Private Network for OCI Implementation** in this workshop.
 
 The following illustration shows a network topology that can be used to provide secure access to your dedicated autonomous infrastructure.

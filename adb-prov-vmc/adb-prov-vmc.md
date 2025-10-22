@@ -2,7 +2,7 @@
 # Provisioning an Autonomous VM Cluster on Exadata Cloud@Customer
 
 ## Introduction
-Oracle Autonomous Database on Oracle Exadata Cloud@Customer provides the benefits of a self-driving, self-securing, and self-repairing database management system, bringing it closer to your applications on-premises while deployed securely behind your firewall. Setting up and using Autonomous databases on your Exadata Cloud@Customer consists of two steps
+Oracle Autonomous AI Database on Oracle Exadata Cloud@Customer provides the benefits of a self-driving, self-securing, and self-repairing database management system, bringing it closer to your applications on-premises while deployed securely behind your firewall. Setting up and using Autonomous AI Databases on your Exadata Cloud@Customer consists of two steps
 
 1. **Provision an Exadata Infrastructure**
 
@@ -62,9 +62,9 @@ On the **Create Autonomous Exadata VM Cluster** page enter the folowing informat
 
         - OCPU count per VM: Specify the OCPU count for each individual VM. The minimum value is 5 OCPUs per VM.
 
-        - Database memory per OCPU (GB): The memory per OCPU allocated for the Autonomous Databases in the Autonomous VM CLuster.
+        - Database memory per OCPU (GB): The memory per OCPU allocated for the Autonomous AI Databases in the Autonomous VM CLuster.
 
-        - Database storage(TB): Data storage allocated for Autonomous Database creation in the Autonomous VM Cluster
+        - Database storage(TB): Data storage allocated for Autonomous AI Database creation in the Autonomous VM Cluster
 
 ![create-avmc-cc4](./images/create-avmc-cc4.png " ")
 

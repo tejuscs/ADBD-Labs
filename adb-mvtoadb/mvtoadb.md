@@ -1,6 +1,6 @@
 # Migrate Workloads to ATP-D using MV2ADB
 ## Introduction
-Data Replication is an essential part of your efforts and tasks when you are migrating your Oracle databases on OCI. **Move to Autonomous Database (MV2ADB)** is a tool, permitting the data loading and migration from “on premises” to Autonomous Database Cloud leveraging Oracle Data Pump and with one command. Data Pump Import lets you import data from Data Pump files residing on the Oracle Cloud Infrastructure Object Storage. You can save your data to your Cloud Object Store and load them to Autonomous Database Cloud using “mv2adb”.
+Data Replication is an essential part of your efforts and tasks when you are migrating your Oracle databases on OCI. **Move to Autonomous AI Database (MV2ADB)** is a tool, permitting the data loading and migration from “on premises” to Autonomous AI Database Cloud leveraging Oracle Data Pump and with one command. Data Pump Import lets you import data from Data Pump files residing on the Oracle Cloud Infrastructure Object Storage. You can save your data to your Cloud Object Store and load them to Autonomous AI Database Cloud using “mv2adb”.
 
 This lab is a 3 step process – take export from source, upload the dumpfiles on object storage and import files into ATP-D. However, we would be performing all the 3 steps using a single command. In this lab we will use a 12c DBCS instance as source and an ATP-D instance as our target.
 
@@ -17,7 +17,7 @@ As a LOB user:
 
 ### Required Artifacts
 
-- A pre-provisioned dedicated autonomous database instance. Refer to the earlier lab, **Provisioning Databases**.
+- A pre-provisioned dedicated Autonomous AI Database instance. Refer to the earlier lab, **Provisioning Databases**.
 - A pre-provisioned Source with connectivity to target ATP-D. We are using DBCS as Source here.
 - Download and transfer ATP-D Wallet to Source Machine. Refer to Task 2 of the earlier lab, **Configure a Development System**.
 - A pre-generated Auth Token from the console. (**Menu** > **Identity** > **Users** > **User Details** > **Auth Tokens** > **Generate Tokens**)
@@ -201,7 +201,7 @@ Generate encrypted passwords using the **`mv2adb encpass`** command for system p
 
     ![This image shows the result of performing the above step.](./images/img11.jpg " ")
 
-Migration of schema from source machine to Autonomous Database is complete.
+Migration of schema from source machine to Autonomous AI Database is complete.
 
 ## Task 7: Validate the Data Migration
 
@@ -226,7 +226,7 @@ Migration of schema from source machine to Autonomous Database is complete.
 *Great Work! You have successfully migrated HR schema from source database to ATP-D. You can do the same and more by making appropriate changes to the cfg file for various parameters.*
 
 - **Author** - Padma Priya Rajan, Navya M S & Jayshree Chatterjee
-- **Last Updated By/Date** - Kris Bhanushali, Autonomous Database Product Management, March 2022
+- **Last Updated By/Date** - Kris Bhanushali, Autonomous AI Database Product Management, March 2022
 
 
 ## See an issue or have feedback?  
