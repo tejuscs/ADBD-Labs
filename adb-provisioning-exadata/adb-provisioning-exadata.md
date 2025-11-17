@@ -34,7 +34,7 @@ Your tenancy has limits on the maximum number of resources you're allowed to use
 - The list should show all the available resources, Exadata X11M Database Server Count and Exadata X11M Storage Server Count available or used in selected Availability Domain. 
 
     ![This image shows the result of performing the above step.](./images/limit2.png " ")
-    - To increase the Service in your teanancy, click on **Request a service limit increase** and fill in the details in **Request Service Limit Updates**.
+    - To increase the Service in your tenancy, click on **Request a service limit increase** and fill in the details in **Request Service Limit Updates**.
 
     ![This image shows the result of performing the above step.](./images/limit3.png " ")
     
@@ -44,17 +44,16 @@ Your tenancy has limits on the maximum number of resources you're allowed to use
 *Log in to your OCI account as a fleet administrator.*
 
 - Navigate to the **Oracle AI Database** option in the top left hamburger menu from your OCI home screen. Click **Autonomous AI Database on Dedicated Infrastructure**.
-
-  ![This image shows the result of performing the above step.](./images/create-cei1.png " ")
 - Select **Exadata Infrastructure** and ensure you pick the desired fleet compartment as shown above. Click **Create Exadata Infrastructure**.
 
+  ![This image shows the result of performing the above step.](./images/create-cei1.png " ")
 - Enter a user-friendly description or other information that helps you easily identify the resource as the name for the Exadata Infrastructure and select the Availability Domain in which you want the CEI to be created. Choose the type of Oracle Exadata Database Machine you want to allocate to this resource.
 
  ![This image shows the result of performing the above step.](./images/create-cei2.png " ")
 - Specify the number of database and storage servers for configuring your Exadata Infrastructure resource. The default configuration is 2 database servers and 3 storage servers. However, you have the flexibility to choose a different value for database servers and storage servers within a valid range. The acceptable range of values is 2 to 32 for database servers and 3 to 64 for storage servers. 
 
  ![This image shows the result of performing the above step.](./images/create-cei3.png " ")
-- Optionally, you can configure the automatic maintenance schedule by clicking **Edit maintenance preferences**.
+- Optionally, you can configure the automatic maintenance schedule by clicking **Modify maintenance**.
 
 ![This image shows the result of performing the above step.](./images/create-cei3a.png " ")
 - You can then change the maintenance schedule by specifying quarter, week, day and time you would like to schedule automatic maintenance for your exadata hardware.
