@@ -25,40 +25,41 @@ Watch the video below for an overview of creating a Cloud Exadata Infrastructure
 
 Your tenancy has limits on the maximum number of resources you're allowed to use. You can use quotas to allocate resources to compartments. If you're an administrator in an eligible account, you can request a service limit increase.
 
-*Log in to your OCI account as an Administrator.*
+*Log in to your OCI account as an Administrator.* 
 
-- Navigate to **Governance & Administration** --> **Limits, Quotas and Usage**
+- Navigate to **Governance & Administration** . Under **Tenancy Management**, click **Limits, quotas and Usage**.
 
-    ![This image shows the result of performing the above step.](./images/limit1.png " ")
-
-- Under **Limits, Quotas and Usage**, select Service as **Database**, Scope **Availability Domain** you want to deploy your Cloud Exadata infrastructure. The list should show all the available resources, Exadata X8M Database Server Count and Exadata X8M Storage Server Count available or used in selected Availability Domain. 
+    ![This image shows the result of performing the above step.](./images/limit1.png " ")    
+- Click **Edit Filters** and select Service as **Database**. In Scope choose the desired Availability Domain where you want to deploy your Cloud Exadata infrastructure. In Compartment, choose the compartment where you want to deploy your Cloud Exadata infrastructure. Click **Update**. 
+- The list should show all the available resources, Exadata X11M Database Server Count and Exadata X11M Storage Server Count available or used in selected Availability Domain. 
 
     ![This image shows the result of performing the above step.](./images/limit2.png " ")
+    - To increase the Service in your teanancy, click on **Request a service limit increase** and fill in the details in **Request Service Limit Updates**.
+
     ![This image shows the result of performing the above step.](./images/limit3.png " ")
-
-- To increase the Service in your teanancy, click on **request a service limit increase** and fill in the detals in **Request Service Limit Updates**.
-
-    ![This image shows the result of performing the above step.](./images/limit4.png " ")
-    ![This image shows the result of performing the above step.](./images/limit5.png " ")
-
+    
 
 ## Task 2: Deploy your Cloud Exadata Infrastructure
 
 *Log in to your OCI account as a fleet administrator.*
 
-- Navigate to the **Autonomous Dedicated Infrastructure** option in the top left hamburger menu from your OCI home screen.
+- Navigate to the **Oracle AI Database** option in the top left hamburger menu from your OCI home screen. Click **Autonomous AI Database on Dedicated Infrastructure**.
 
-    ![This image shows the result of performing the above step.](./images/create-cei1.png " ")
+  ![This image shows the result of performing the above step.](./images/create-cei1.png " ")
+- Select **Exadata Infrastructure** and ensure you pick the desired fleet compartment as shown above. Click **Create Exadata Infrastructure**.
 
-- Select **Exadata Infrastructure** and ensure you pick the fleet compartment as shown above. Click the blue **Create Exadata Infrastructure** button.
+- Enter a user-friendly description or other information that helps you easily identify the resource as the name for the Exadata Infrastructure and select the Availability Domain in which you want the CEI to be created. Choose the type of Oracle Exadata Database Machine you want to allocate to this resource.
 
-    ![This image shows the result of performing the above step.](./images/create-cei2.png " ")
+ ![This image shows the result of performing the above step.](./images/create-cei2.png " ")
+- Specify the number of database and storage servers for configuring your Exadata Infrastructure resource. The default configuration is 2 database servers and 3 storage servers. However, you have the flexibility to choose a different value for database servers and storage servers within a valid range. The acceptable range of values is 2 to 32 for database servers and 3 to 64 for storage servers. 
 
-- Enter a name for the Exadata Infrastructure and select the Availability Domain in which you want the CEI to be created. Based on the Exadata System model that you select, you will have options to select different Exadata shapes.  
+ ![This image shows the result of performing the above step.](./images/create-cei3.png " ")
+- Optionally, you can configure the automatic maintenance schedule by clicking **Edit maintenance preferences**.
 
-- You can also modify the exadata maintenance schedules at this time. Click the **Modify Maintenance** button and specify the quarter, week, day and time you would like to schedule automatic maintenance for your exadata hardware.
+![This image shows the result of performing the above step.](./images/create-cei3a.png " ")
+- You can then change the maintenance schedule by specifying quarter, week, day and time you would like to schedule automatic maintenance for your exadata hardware.
 
-    ![This image shows the result of performing the above step.](./images/create-cei3.png " ")
+![This image shows the result of performing the above step.](./images/create-cei3b.png " ")    
 
 - After you add the contact emails for operational notifications and announcements, click **Create Exadata Infrastructure**. Your CEI will soon be ready to deploy autonomous container databases.
 
@@ -70,8 +71,8 @@ You may now **proceed to the next lab**.
 
 - **Author** - Ranganath S R & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer
-- **Updated By/Date** - Ranganath S R, Feb 2022
-- **Last Updated By/Date** - Kris Bhanushali, March 2022
+- **Updated By/Date** - Vandana Rajamani, November 2025
+- **Last Updated By/Date** - Vandana Rajamani, November 2025
 
 ## See an issue or have feedback?  
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!
