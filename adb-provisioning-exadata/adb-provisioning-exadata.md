@@ -34,13 +34,13 @@ Your tenancy has limits on the maximum number of resources you're allowed to use
 - The list should show all the available resources, Exadata X8M Database Server Count and Exadata X8M Storage Server Count available or used in selected Availability Domain. 
 
     ![This image shows the result of performing the above step.](./images/limit2.png " ")
-    - To increase the Service in your tenancy, click on **Request a service limit increase** . Provide the request name and reason for the request.
+- To increase the Service in your tenancy, click on **Request a service limit increase** . Provide the request name and reason for the request.
 
     ![This image shows the result of performing the above step.](./images/limit2a.png " ")
-    - Search for the name of the limit and update the values for each availibility domain.
+- Search for the name of the limit and update the values for each availibility domain.
  
     ![This image shows the result of performing the above step.](./images/limit2b.png " ")
-    - Verify if the values indicated are correct and submit the request.
+- Verify if the values indicated are correct and submit the request.
 
     ![This image shows the result of performing the above step.](./images/limit2c.png " ")
 
