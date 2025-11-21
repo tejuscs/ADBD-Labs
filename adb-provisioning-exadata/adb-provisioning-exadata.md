@@ -30,13 +30,20 @@ Your tenancy has limits on the maximum number of resources you're allowed to use
 - Navigate to **Governance & Administration** . Under **Tenancy Management**, click **Limits, quotas and Usage**.
 
     ![This image shows the result of performing the above step.](./images/limit1.png " ")    
-- Click **Edit Filters** and select Service as **Database**. In Scope choose the desired Availability Domain where you want to deploy your Cloud Exadata infrastructure. In Compartment, choose the compartment where you want to deploy your Cloud Exadata infrastructure. Click **Update**. 
-- The list should show all the available resources, Exadata X11M Database Server Count and Exadata X11M Storage Server Count available or used in selected Availability Domain. 
+- Click **Edit Filters** and enter Service as **Database**. In Scope choose the desired Availability Domain where you want to deploy your Cloud Exadata infrastructure. In Compartment, choose the compartment where you want to deploy your Cloud Exadata infrastructure. Click **Update**. In the search box, enter **Exadata X8M**.
+- The list should show all the available resources, Exadata X8M Database Server Count and Exadata X8M Storage Server Count available or used in selected Availability Domain. 
 
     ![This image shows the result of performing the above step.](./images/limit2.png " ")
-    - To increase the Service in your tenancy, click on **Request a service limit increase** and fill in the details in **Request Service Limit Updates**.
+    - To increase the Service in your tenancy, click on **Request a service limit increase** . Provide the request name and reason for the request.
 
-    ![This image shows the result of performing the above step.](./images/limit3.png " ")
+    ![This image shows the result of performing the above step.](./images/limit2a.png " ")
+    - Search for the name of the limit and update the values for each availibility domain.
+ 
+    ![This image shows the result of performing the above step.](./images/limit2b.png " ")
+    - Verify if the values indicated are correct and submit the request.
+
+    ![This image shows the result of performing the above step.](./images/limit2c.png " ")
+
     
 
 ## Task 2: Deploy your Cloud Exadata Infrastructure
