@@ -53,7 +53,7 @@ We will use the following IAM structure in line with the bare minimum isolation 
 
     - The following policy statements on the **fleetCompartment** ensure the groups **fleetAdmins** and **dbUsers** have the right privileges as explained earlier.
 
-    ````
+    ```
     <copy>
     Allow group fleetAdmins to MANAGE cloud-exadata-infrastructures in compartment fleetCompartment
     Allow group fleetAdmins to MANAGE autonomous-database-family in compartment fleetCompartment
@@ -61,15 +61,15 @@ We will use the following IAM structure in line with the bare minimum isolation 
     Allow group fleetAdmins to USE tag-namespaces in compartment fleetCompartment
     Allow group fleetAdmins to USE tag-defaults in compartment fleetCompartment
     </copy>
-    ````
+    ```
 
     - The only privilege **dbUsers** need on the **fleetComparment** is `READ` privilege on the Autonomous Container Databases to create their own Autonomous AI Databases. Therefore, we add a policy statement on the **fleetComparment** as follows:
 
-    ````
+    ```
     <copy>
     Allow group dbUsers to READ autonomous-container-databases in compartment fleetCompartment
     </copy>
-    ````
+    ```
    ![This image shows the result of performing the above step for creating the fleetAdminpolicy](./images/create-fleetadminpolicy.png " ")
 
 
@@ -77,7 +77,7 @@ We will use the following IAM structure in line with the bare minimum isolation 
 
     **Note:** The assumption here is that the DB user will need to create other resources such as network, compute instances, storage buckets, and more, in their own compartment. This is highly dependent on a customer's individual requirement and can be configured in many different ways.
 
-    ````
+    ```
     <copy>
     Allow group dbUsers to MANAGE autonomous-databases in compartment dbUserCompartment
     Allow group dbUsers to MANAGE autonomous-backups in compartment dbUserCompartment
@@ -87,7 +87,7 @@ We will use the following IAM structure in line with the bare minimum isolation 
     Allow group dbUsers to MANAGE objects in compartment dbUserCompartment
     Allow group dbUsers to MANAGE app-catalog-listing in compartment dbUserCompartment
     </copy>
-    ````
+    ```
 
     **NOTE: [This documention](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbdf/index.html#articletitle) lists all the IAM policies for Autonomous AI Database Dedicated Exadata Infrastructure**.
 
@@ -198,7 +198,7 @@ You may now **proceed to the next lab**.
 
 - **Author** - Tejus S. & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer
-- **Last Updated By/Date** - Vandana Rajamani, August 2025
+- **Last Updated By/Date** - Vandana Rajamani, November 2025
 
 ## See an issue or have feedback?
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!

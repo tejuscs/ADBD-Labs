@@ -30,8 +30,8 @@ Your tenancy has limits on the maximum number of resources you're allowed to use
 - Navigate to **Governance & Administration** . Under **Tenancy Management**, click **Limits, quotas and Usage**.
 
     ![This image shows the result of performing the above step.](./images/limit1.png " ")    
-- Click **Edit Filters** and enter Service as **Database**. In Scope choose the desired Availability Domain where you want to deploy your Cloud Exadata infrastructure. In Compartment, choose the compartment where you want to deploy your Cloud Exadata infrastructure. Click **Update**. In the search box, enter **Exadata X8M**.
-- The list should show all the available resources, Exadata X8M Database Server Count and Exadata X8M Storage Server Count available or used in selected Availability Domain. 
+- Click **Edit Filters** and enter Service as **Database**. In Scope choose the desired Availability Domain where you want to deploy your Cloud Exadata infrastructure. In Compartment, choose the compartment where you want to deploy your Cloud Exadata infrastructure. Click **Update**. In the search box, enter **Exadata X11M**.
+- The list should show all the available resources, Exadata X11M Database Server Count and Exadata X11M Storage Server Count available or used in selected Availability Domain. 
 
     ![This image shows the result of performing the above step.](./images/limit2.png " ")
 - To increase the Service in your tenancy, click on **Request a service limit increase** . Provide the request name and reason for the request.
@@ -68,6 +68,8 @@ Your tenancy has limits on the maximum number of resources you're allowed to use
 ![This image shows the result of performing the above step.](./images/create-cei3b.png " ")    
 
 - After you add the contact emails for operational notifications and announcements, click **Create Exadata Infrastructure**. Your CEI will soon be ready to deploy autonomous container databases.
+
+![This image shows the result of performing the above step.](./images/create-cei4.png " ") 
 
 *All Done! You have successfully deployed your Autonomous Exadata Infrastructure and it should be available shortly.*
 
