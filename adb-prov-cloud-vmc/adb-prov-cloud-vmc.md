@@ -23,59 +23,75 @@ Watch the video below for step by step directions on creating an Autonomous VM C
 ## Create an Autonomous VM Cluster on your Exadata Infrastructure
 
 *Log in to your OCI account as a fleet administrator.*
+- Navigate to the **Oracle AI Database** option in the top left hamburger menu from your OCI home screen. Click **Autonomous AI Database on Dedicated Infrastructure**.
+- Select **Autonomous Exadata VM Cluster** from the menu on the left. Click **Create Autonomous Exadata VM Cluster**.
 
-- Navigate to the **Oracle Database** option in the top left hamburger menu from your OCI home screen and select **Autonomous AI Database or Autonomous Dedicated Infrastructure**.
-
-    ![create-avmc-pc1](./images/create-avmc-pc1.png " ")
-
-- Select **Autonomous Exadata VM Cluster** from the menu on the left and click the **Create Autonomous Exadata VM Cluster** button.
-
-    ![create-avmc-pc2](./images/create-avmc-pc2.png " ")
+      ![create-avmc-pc1](./images/create-avmc-pc1.png " ")
 
 - Perform the following tasks on the **Create Autonomous Exadata VM Cluster** page.
 
-    ![create-avmc-pc3](./images/create-avmc-pc3.png " ")
+    1. **Choose a compartment** to deploy the Autonomous VM Cluster. Enter a user-friendly description or other information that helps you easily identify the infrastructure resource. 
 
-    1. **Choose a compartment** to deploy the Autonomous VM Cluster and provide a display name.
+    2. **Select the Exadata Infrastructure to host the new Autonomous Exadata VM Cluster.** Change the compartment if your Exadata Infrastructure was created in a different compartment than the one shown.
+   
+      ![create-avmc-pc1](./images/create-avmc-pc2.png " ")
 
-    2. **Select the Exadata Infrastructure.** Change the compartment if your Exadata Infrastructure was created in a different compartment than shown in the title.
+    3. **Configure the Autonomous VM Cluster Resources:**
 
-    3. **Configure network settings.** Select the VCN and subnet in which your VM Cluster will be deployed.
+          - Compute Model: Denotes the compute model for your Autonomous Exadata VM Cluster resource. Default model is ECPU. This is based on the number of cores elastically allocated from a pool of compute and storage servers.
 
-    4. **Configure the Autonomous VM Cluster Resources:**
+          ![create-avmc-pc1](./images/create-avmc-pc3.png " ")    
+
+          - DB Server Selection: Lists the DB Servers (VMs) used to deploy the new Autonomous Exadata VM Cluster (AVMC) resource. The maximum resources (CPUs, Memory, and Local Storage) available per VM is also displayed. Optionally, you can add or remove the VMs by clicking Edit DB Server Selection. Clicking this button launches the Change DB Servers dialog listing all the available DB Servers 
+
+          ![create-avmc-pc1](./images/create-avmc-pc3a.png " ")  
+
+          - VM count or Node Count: Denotes the number of database servers in the Exadata infrastructure. This is a read-only value. 
+
+          - Maximum number of Autonomous Container Databases: The number of ACDs specified represents the upper limit on ACDs. These ACDs must be created separately as needed.
+
+          - CPU count per VM or node: Specify the CPU count for each individual VM. The minimum value is 40 ECPUs per VM.
+
+          - Database memory per CPU (GB): The memory per CPU allocated for the Autonomous AI Databases in the Autonomous VM Cluster.
+
+          - Database storage (TB): Data storage allocated for Autonomous AI Database creation in the Autonomous VM Cluster. The minimum value is 5TB.
+
+          ![create-avmc-pc1](./images/create-avmc-pc4.png " ")  
+
+    4. **Configure network settings.** Select the VCN and subnet in which your VM Cluster will be deployed.
+          - Virtual cloud network: The virtual cloud network (VCN) in which you want to create the new Autonomous Exadata VM Cluster.
+
+          - Subnet: A subnet within the above selected VCN for the new Autonomous Exadata VM Cluster.
+          
+          Optionally, you can use network security groups to control traffic. To do so, Turn on the option to use network security groups and choose a Network Security Group from the select list.
+
+          ![create-avmc-pc1](./images/create-avmc-pc5.png " ")  
     
-            - Select compute model: Default model is ECPU. This is based on the number of cores elastically allocated from the shared pool of Exadata database servers and storage servers. Click Change compute model if you wish to select OCPU. OCPU compute model is based on the physical core of a processor with hyper-threading enabled. 
+    5. **Configure Automatic Maintenance:** Optionally, configure the automatic maintenance schedule by clicking Modify Schedule. You can then change the maintenance schedule by specifying quarter, week, day and time you would like to schedule automatic maintenance for your Autonomous Exadata VM Cluster.
 
-            - Node Count: Denotes the number of database servers in the Exadata Infrastructure.
-
-            - Maximum number of Autonomous Container Databases: The number of ACDs specified represents the upper limit on ACDs. These ACDs must be created separately as needed. ACD creation also requires 2 available OCPUs per node.
-
-            - OCPU count per VM: Specify the OCPU count for each individual VM. The minimum value is 5 OCPUs per VM.
-
-            - Database memory per OCPU (GB): The memory per OCPU allocated for the Autonomous AI Databases in the Autonomous VM CLuster.
-            
-            - Database storage(TB): Data storage allocated for Autonomous AI Database creation in the Autonomous VM Cluster
-
-    5. **Configure Automatic Maintenance:** Optionally, configure the automatic maintenance schedule by clicking Modify Schedule.
+      ![create-avmc-pc1](./images/create-avmc-pc5a.png " ")
 
     6. **Choose the license type** you wish to use.
             - Bring your own license: If you choose this option, make sure you have proper entitlements to use for new service instances that you create.
             - License included: With this choice, the cost of the cloud service includes a license for the Database service
     
-    7. In the advanced options, you may pick a different timezone than the default UTC
+    7. In the advanced options, you may pick a different timezone than the default UTC. You can optionally add a security attribute to control access for your AVMC resource using Zero Trust Packet Routing (ZPR) policies. If you want to use tags, add tags by selecting a Tag Namespace, Tag Key, and Tag Value.
+
+      ![create-avmc-pc1](./images/create-avmc-pc6.png " ")
 
 - Click **Create Autonomous Exadata VM Cluster**.
 
 Once created, your Autonomous Exadata VM Cluster is ready to deploy Autonomous Container Databases.
 
-*All Done! You have successfully setup your Autonomous VM Cluster on Exadata Cloud @ Customer environment. It is now ready to deploy Autonomous Container Databases*
+*All Done! You have successfully setup your Autonomous VM Cluster for Autonomous AI Database on Dedicated Infrastructure. It is now ready to deploy Autonomous Container Databases*
 
 You may now **proceed to the next lab**.
 
 ## Acknowledgements
 
 - **Author** - Ranganath, S R, Simon Law & Kris Bhanushali
-- **Last Updated By/Date** - Ranganath S R, Feb 2023
+- **Updated By/Date** - Vandana Rajamani, December 2025
+- **Last Updated By/Date** - Vandana Rajamani, November 2025
 
 ## See an issue or have feedback?
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!
