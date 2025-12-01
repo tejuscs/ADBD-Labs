@@ -42,7 +42,7 @@ Watch the video below for step by step directions on creating an Autonomous VM C
 
           ![create-avmc-pc3](./images/create-avmc-pc3.png " ")    
 
-          - DB Server Selection: Lists the DB Servers (VMs) used to deploy the new Autonomous Exadata VM Cluster (AVMC) resource. The maximum resources (CPUs, Memory, and Local Storage) available per VM is also displayed. Optionally, you can add or remove the VMs by clicking Edit DB Server Selection. Clicking this button launches the Change DB Servers dialog listing all the available DB Servers 
+          - DB Server Selection: Lists the DB Servers (VMs) used to deploy the new Autonomous Exadata VM Cluster (AVMC) resource. The maximum resources (CPUs, Memory, and Local Storage) available per VM is also displayed. Optionally, you can add or remove the VMs by clicking Edit DB Server Selection. Clicking this button launches the Change DB Servers dialog listing all the available DB Servers. 
 
           ![create-avmc-pc3a](./images/create-avmc-pc3a.png " ")  
 
@@ -73,7 +73,7 @@ Watch the video below for step by step directions on creating an Autonomous VM C
 
     6. **Choose the license type** you wish to use.
             - Bring your own license: If you choose this option, make sure you have proper entitlements to use for new service instances that you create.
-            - License included: With this choice, the cost of the cloud service includes a license for the Database service
+            - License included: With this choice, the cost of the cloud service includes a license for the Database service.
     
     7. In the advanced options, you may pick a different timezone than the default UTC. You can optionally add a security attribute to control access for your AVMC resource using Zero Trust Packet Routing (ZPR) policies. If you want to use tags, add tags by selecting a Tag Namespace, Tag Key, and Tag Value.
 
@@ -83,7 +83,7 @@ Watch the video below for step by step directions on creating an Autonomous VM C
 
 Once created, your Autonomous Exadata VM Cluster is ready to deploy Autonomous Container Databases.
 
-*All Done! You have successfully setup your Autonomous VM Cluster for Autonomous AI Database on Dedicated Infrastructure. It is now ready to deploy Autonomous Container Databases*
+*All Done! You have successfully setup your Autonomous VM Cluster for Autonomous AI Database on Dedicated Infrastructure. It is now ready to deploy Autonomous Container Databases*.
 
 You may now **proceed to the next lab**.
 
@@ -91,7 +91,7 @@ You may now **proceed to the next lab**.
 
 - **Author** - Ranganath, S R, Simon Law & Kris Bhanushali
 - **Updated By/Date** - Vandana Rajamani, December 2025
-- **Last Updated By/Date** - Vandana Rajamani, November 2025
+- **Last Updated By/Date** - Vandana Rajamani, December 2025
 
 ## See an issue or have feedback?
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!
