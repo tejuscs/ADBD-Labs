@@ -14,7 +14,7 @@ Estimated Time: 20 minutes
 - Create an Autonomous VM Cluster on a pre-provisioned Exadata Infrastructure.
 
 ### Required Artifacts
-- An Oracle Cloud Infrastructure account with a pre-provisioned instance of Exadata Infrastructure
+- An Oracle Cloud Infrastructure account with a pre-provisioned instance of Exadata Infrastructure.
 
 Watch the video below for step by step directions on creating an Autonomous VM Cluster on your Exadata Infrastructure.
 
@@ -26,7 +26,7 @@ Watch the video below for step by step directions on creating an Autonomous VM C
 - Navigate to the **Oracle AI Database** option in the top left hamburger menu from your OCI home screen. Click **Autonomous AI Database on Dedicated Infrastructure**.
 - Select **Autonomous Exadata VM Cluster** from the menu on the left. Click **Create Autonomous Exadata VM Cluster**.
 
-      ![create-avmc-pc1](./images/create-avmc-pc1.png " ")
+          ![create-avmc-pc1](./images/create-avmc-pc1.png " ")
 
 - Perform the following tasks on the **Create Autonomous Exadata VM Cluster** page.
 
@@ -34,7 +34,7 @@ Watch the video below for step by step directions on creating an Autonomous VM C
 
     2. **Select the Exadata Infrastructure to host the new Autonomous Exadata VM Cluster.** Change the compartment if your Exadata Infrastructure was created in a different compartment than the one shown.
    
-      ![create-avmc-pc1](./images/create-avmc-pc2.png " ")
+          ![create-avmc-pc1](./images/create-avmc-pc2.png " ")
 
     3. **Configure the Autonomous VM Cluster Resources:**
 
@@ -69,7 +69,7 @@ Watch the video below for step by step directions on creating an Autonomous VM C
     
     5. **Configure Automatic Maintenance:** Optionally, configure the automatic maintenance schedule by clicking Modify Schedule. You can then change the maintenance schedule by specifying quarter, week, day and time you would like to schedule automatic maintenance for your Autonomous Exadata VM Cluster.
 
-      ![create-avmc-pc1](./images/create-avmc-pc5a.png " ")
+          ![create-avmc-pc1](./images/create-avmc-pc5a.png " ")
 
     6. **Choose the license type** you wish to use.
             - Bring your own license: If you choose this option, make sure you have proper entitlements to use for new service instances that you create.
@@ -77,7 +77,7 @@ Watch the video below for step by step directions on creating an Autonomous VM C
     
     7. In the advanced options, you may pick a different timezone than the default UTC. You can optionally add a security attribute to control access for your AVMC resource using Zero Trust Packet Routing (ZPR) policies. If you want to use tags, add tags by selecting a Tag Namespace, Tag Key, and Tag Value.
 
-      ![create-avmc-pc1](./images/create-avmc-pc6.png " ")
+          ![create-avmc-pc1](./images/create-avmc-pc6.png " ")
 
 - Click **Create Autonomous Exadata VM Cluster**.
 
