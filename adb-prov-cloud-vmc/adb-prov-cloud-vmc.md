@@ -75,7 +75,12 @@ Watch the video below for step by step directions on creating an Autonomous VM C
             - Bring your own license: If you choose this option, make sure you have proper entitlements to use for new service instances that you create.
             - License included: With this choice, the cost of the cloud service includes a license for the Database service.
     
-    7. In the advanced options, you may pick a different timezone than the default UTC. You can optionally add a security attribute to control access for your AVMC resource using Zero Trust Packet Routing (ZPR) policies. If you want to use tags, add tags by selecting a Tag Namespace, Tag Key, and Tag Value.
+    7. In the advanced options, you may pick a different timezone than the default UTC. You can optionally add a security attribute to control access for your AVMC resource using Zero Trust Packet Routing (ZPR) policies. 
+
+    8. To be able to create 23ai databases, you must provision the AVMC with appropriate tags. Add the following tag to support ACDs with 26ai Database Software Version.
+            - Tag namespace: None (Add a free-form tag)
+            - Tag key: DatabaseVersion
+            - Tag value: 26ai
 
           ![create-avmc-pc6](./images/create-avmc-pc6.png " ")
 
