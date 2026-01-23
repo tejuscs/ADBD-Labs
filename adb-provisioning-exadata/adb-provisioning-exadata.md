@@ -17,9 +17,6 @@ As a fleet administrator:
 - An Oracle Cloud Infrastructure account with service limits to deploy at least one 1/4 rack of Exadata Infrastructure (or 2 database servers and 3 storage servers limits) in any region's Availability Domain.
 - You also need privileges to create Exadata Infrastructure and Autonomous Container database in a pre-provisioned compartment and network.
 
-Watch the video below for an overview of creating a Cloud Exadata Infrastructure.
-
-[](youtube:IAGXC8WzJn0)
 
 ## Task 1: Check / Add Service Limits in your tenancy to create Cloud Exadata Infrastructure.
 

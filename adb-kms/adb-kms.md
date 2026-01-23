@@ -5,8 +5,6 @@ The Autonomous AI Database service allows customers to retain control of the dat
 
 Each autonomous container database (ACD) and each Autonomous AI Database (ADB) within it can have its own unique master encryption key (MEK). Keys may be rotated at desired frequency either through console UI or using REST APIs.
 
-[This is an introductory YouTube video.](youtube:JoAJ7lAgdkA)
-
 Estimated Time: 40 minutes
 
 ### Objectives

@@ -16,9 +16,6 @@ As a fleet administrator:
 
 - An Oracle Cloud Infrastructure account with fleet administrator privileges. For a detailed description of required IAM policies, please refer to the [documentation on IAM policies](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbdf/) in the Autonomous AI Database Dedicated documentation set.
 
-Watch the video below for an overview of creating an Autonomous Container Database.
-
-[](youtube:9RBVZGmGD_o)
 
 ## Task 1: Create an Autonomous Container Database (ACD)
 

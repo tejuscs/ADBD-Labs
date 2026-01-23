@@ -22,10 +22,6 @@ Oracle Autonomous AI Database on Oracle Exadata Cloud@Customer provides the bene
 ### Required Artifacts
 - An Oracle Cloud Infrastructure account with a pre-provisioned instance of Exadata Infrastructure
 
-Watch the video below for step by step directions on creating an Autonomous VM Cluster on your Exadata Infrastructure
-
-[](youtube:yYKZ4oXw94Y)
-
 ## Create an Autonomous VM Cluster on your Exadata Cloud@Customer infrastructure.
 
 *Login to your OCI account as a fleet administrator*

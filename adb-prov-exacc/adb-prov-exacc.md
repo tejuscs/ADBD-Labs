@@ -29,10 +29,6 @@ Estimated Time: 20 minutes
 - An Oracle Cloud Infrastructure account with service limits to deploy at least one base rack of Exadata Infrastructure in any one region or Availability Domain.
 - You also need privileges to create  Exadata Infrastructure and a container database in a pre-provisioned compartment and network.
 
-Watch the video below for step by step directions on creating an Autonomous Exadata Infrastructure in your Oracle Cloud Infrastructure tenancy
-
-[](youtube:9gxoodkEaAU)
-
 ## Task 1: Create the Oracle Exadata Cloud@Customer infrastructure.
 
 *Login to your OCI account as a fleet administrator*
