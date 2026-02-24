@@ -29,7 +29,7 @@ For separation of duties, Oracle recommends a fleet administrator provision the 
 We will use the following IAM structure in line with the bare minimum isolation recommended:
 
 - A **fleetCompartment** to hold the Network resources, Exadata Infrastructure, Autonomous VM Cluster and Autonomous Container Databases (ACD).
-- A **dbUserCompartment** for database and application user objects such as Autononomous Databases (ADBs) and application client machines. While for the purpose of this lab we create a single dbUser compartment, in practice, each user may have their own compartment for further isolation.
+- A **dbUserCompartment** for database and application user objects such as Autononomous AI Databases (ADBs) and application client machines. While for the purpose of this lab we create a single dbUser compartment, in practice, each user may have their own compartment for further isolation.
     - The fleet admin will have IAM policies to create and manage CEI  (Cloud Exadata Infrastructure), ACDs and network resources in the fleet compartment.
     - Alternatively, a network admin may first provision the VCN and subnets while a fleet admin then provisions the Exadata Infrastructure, VM Cluster and Container databases. The exadata subnet may be hosted in its own separate compartment.
 
@@ -131,7 +131,7 @@ For simplicity, only two subnets are being created here - a private subnet for e
 
 - Create a VCN in **fleetCompartment** with CIDR block 10.0.0.0/16 which provide for 64k IP addresses for the various subnets within this network. To create a VCN, navigate to the **Networking** section and click **Virtual Cloud Networks**. Then click **Create VCN**. On the **Create Virtual Cloud Network page**, fill out the required information and click **Create VCN**.
 
-    ![This image shows the result of performing the above step for creating a VCN.](./images/create-ocivcn.png " ")
+    ![This image shows the result of performing the above step for creating a VCN.](./images/createfleetvcn.png " ")
 
    **Creating Security Lists:**
 
@@ -142,14 +142,17 @@ For simplicity, only two subnets are being created here - a private subnet for e
     ![This image shows the result of performing the above step.](./images/secrules.png " ")
 
   We start with creating a security list **exaSubnet-seclist** for the exadata subnet based on rules defined in the table above.
-    ![This image shows the result of Ingress Rule 1.](./images/create-seclist-1.png " ")
-    ![This image shows the result of Ingress Rule 2.](./images/create-seclist-2.png " ")
-    ![This image shows the result of Ingress Rule 3.](./images/create-seclist-3.png " ")
-    ![This image shows the result of Ingress Rule 4.](./images/create-seclist-4.png " ")
-    ![This image shows the result of Ingress Rule 5.](./images/create-seclist-5.png " ")
-    ![This image shows the result of Egress Rule 1.](./images/create-seclist-6.png " ")
+    ![This image shows the result of Ingress Rule 1.](./images/crtseclistingress1.png " ")
+    ![This image shows the result of Ingress Rule 2.](./images/crtseclistingress2.png " ")
+    ![This image shows the result of Ingress Rule 3.](./images/crtseclistingress3.png " ")
+    ![This image shows the result of Ingress Rule 4.](./images/crtseclistingress4.png " ")
+    ![This image shows the result of Ingress Rule 5.](./images/crtseclistingress5.png " ")
+    ![This image shows the result of Egress Rule 1.](./images/crtseclistegress1.png " ")
 
-  You have now completed creating the **exaSubnet-seclist** security list. In the same way create another security list **appSubnet-seclist** for the application subnet using the rules defined in the table above. Once again, since this is a two tier configuration, we will host VPN servers, Application servers, compute instances for VNC, and more in this subnet and therefore, suitable ports needs to be open to internet traffic.
+  You have now completed creating the **exaSubnet-seclist** security list. In the same way create another security list **appSubnet-seclist** for the application subnet using the rules defined in the table above. Once you add the ingress and egress rules, the **appSubnet-seclist** will have the rules as shown below.  
+    ![This image shows the result of all rules for appsubnet seclist.](./images/appsubnetseclist.png " ")
+
+  Once again, since this is a two tier configuration, we will host VPN servers, Application servers, compute instances for VNC, and more in this subnet and therefore, suitable ports needs to be open to internet traffic.
 
   Alternatively, you may host internet facing resources in a separate subnet and set up security lists accordingly. Consult your network administrator for deploying this in line with your corporate best practices.
 
@@ -158,11 +161,11 @@ For simplicity, only two subnets are being created here - a private subnet for e
   Instances in the application subnet may need access to the internet. For that purpose we will deploy an internet gateway in the VCN and create a route to it. This is optional and depends on whether you want any hosts in the public domain. Typically bastion hosts can be setup in a public subnet for ssh access. In this guide, for simplicity, we will set up our developer client machines in the public appSubnet.
 
   On the **Details** page for your VCN, click the **Gateways** tab. Under the **Internet Gateways** section, click **Create Internet Gateway**. Fill out the required information and click **Create Internet Gateway**.
-    ![create-internet-gateway](./images/create-internetgateway.png " ")
+    ![create-internet-gateway](./images/createinternetgateway.png " ")
 
   **Create a Route Table:**
 
-   You need to create a route table for the Application Subnet to route traffic to the internet gateway. On the **Details** page for your VCN, click the **Routing** tab. Under the **Route Tables** section, click **Create Route Table**. Fill out the required information and click **Create Internet Gateway**.
+   You need to create a route table for the Application Subnet to route traffic to the internet gateway. On the **Details** page for your VCN, click the **Routing** tab. Under the **Route Tables** section, click **Create Route Table**. Fill out the required information and click **Create**.
 
   Note the destination CIDR block 0.0.0.0/0 indicate ALL IP addresses globally, that is, to any host anywhere on the internet. You can limit it to specific hosts or network as desired. For example, you can limit it to hosts in your corporate network or to a specific host such as your personal laptop as long as it has a unique public IP address.
 
