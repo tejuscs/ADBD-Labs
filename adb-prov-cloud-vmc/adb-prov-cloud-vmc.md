@@ -16,10 +16,6 @@ Estimated Time: 20 minutes
 ### Required Artifacts
 - An Oracle Cloud Infrastructure account with a pre-provisioned instance of Exadata Infrastructure.
 
-Watch the video below for step by step directions on creating an Autonomous VM Cluster on your Exadata Infrastructure.
-
-[](youtube:FVw2PfI0UbU)
-
 ## Create an Autonomous VM Cluster on your Exadata Infrastructure
 
 *Log in to your OCI account as a fleet administrator.*
@@ -77,13 +73,6 @@ Watch the video below for step by step directions on creating an Autonomous VM C
     
     7. In the advanced options, you may pick a different timezone than the default UTC. You can optionally add a security attribute to control access for your AVMC resource using Zero Trust Packet Routing (ZPR) policies. 
 
-    8. To be able to create 23ai databases, you must provision the AVMC with appropriate tags. Add the following tag to support ACDs with 26ai Database Software Version.
-            - Tag namespace: None (Add a free-form tag)
-            - Tag key: DatabaseVersion
-            - Tag value: 26ai
-
-          ![create-avmc-pc6](./images/create-avmc-pc6.png " ")
-
 - Click **Create Autonomous Exadata VM Cluster**.
 
 Once created, your Autonomous Exadata VM Cluster is ready to deploy Autonomous Container Databases.
@@ -96,7 +85,7 @@ You may now **proceed to the next lab**.
 
 - **Author** - Ranganath, S R, Simon Law & Kris Bhanushali
 - **Updated By/Date** - Vandana Rajamani, December 2025
-- **Last Updated By/Date** - Vandana Rajamani, December 2025
+- **Last Updated By/Date** - Vandana Rajamani, February 2026
 
 ## See an issue or have feedback?
 Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!
