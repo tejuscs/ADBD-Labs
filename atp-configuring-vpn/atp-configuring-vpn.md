@@ -200,7 +200,7 @@ You may now **proceed to the next lab**.
 
 - **Author** - Tejus S. & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer
-- **Last Updated By/Date** - Yaisah Granillo, April 2022
+- **Last Updated By/Date** - Vandana Rajamani, March 2026
 
 
 ## See an issue or have feedback?
