@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Oracle Autonomous AI Database on Dedicated Infrastructure is deployed in a private VCN in the Oracle Cloud Infrastructure (OCI) with no public IP address assigned. Hence to gain connectivity to the databases, a best practice approach is to use a VPN connection.
+Oracle Autonomous AI Database on Dedicated Infrastructure is deployed in a private VCN in the Oracle Cloud Infrastructure (OCI) with no public IP address assigned. Hence to gain connectivity to the databases, a best practical approach is to use a VPN connection.
 
 This lab walks you through the steps to deploy a VPN server in OCI and create an SSL VPN connection between a client machine (your desktop) and the dedicated Autonomous AI Database infrastructure. Once configured, a single VPN server can be shared among multiple users.
 
@@ -13,12 +13,12 @@ As a network or fleet admin:
 
 1. Configure a VPN server in OCI based on OpenVPN software.
 2. Configure your VPN client and connect to VPN Server.
-3. Launch SQL Developer on client and connect to a dedicated Autonomous AI Database (ATP) instance.
+3. Launch SQL Developer on client and connect to a Dedicated Autonomous AI Database (ATP) instance.
 
 
 ### Required Artifacts
 
-- An Oracle Cloud Infrastructure account with privileges to create compute instance and network resources
+- An Oracle Cloud Infrastructure account with privileges to create compute instance and network resources.
 - A pre-provisioned dedicated Oracle Autonomous AI Database instance in a private network. Refer to the lab **Provisioning Databases** in the [Autonomous Database Dedicated for Developers and Database Users workshop](https://livelabs.oracle.com/ords/r/dbpm/livelabs/run-workshop?p210_wid=3197) on how to provision an ATP database.
 - A pre-provisioned Virtual Cloud Network with public and private subnets setup with appropriate security lists. Refer to the earlier lab **Prepare Private Network for OCI Implementation** in this workshop.
 
@@ -31,7 +31,7 @@ The following illustration shows a network topology that can be used to provide 
 
 - Security lists have been setup such that tcp traffic into the private exadata subnet is allowed only through hosts in the public subnet. This can be further tightened by allowing traffic from specific hosts and ports.
 
-- For detailed instructions on network setup for an dedicated autonomous DB infrastructure, refer to the earlier lab **Prepare Private Network for OCI Implementation** in this workshop.
+- For detailed instructions on network setup for a Dedicated Autonomous AI Database infrastructure, refer to the earlier lab **Prepare Private Network for OCI Implementation** in this workshop.
 
 
 ## Task 1: Launch a CentOS VM for the OpenVPN server
