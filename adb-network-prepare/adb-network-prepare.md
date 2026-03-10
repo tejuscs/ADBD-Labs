@@ -161,7 +161,7 @@ For simplicity, only two subnets are being created here - a private subnet for e
   Instances in the application subnet may need access to the internet. For that purpose we will deploy an internet gateway in the VCN and create a route to it. This is optional and depends on whether you want any hosts in the public domain. Typically bastion hosts can be setup in a public subnet for ssh access. In this guide, for simplicity, we will set up our developer client machines in the public appSubnet.
 
   On the **Details** page for your VCN, click the **Gateways** tab. Under the **Internet Gateways** section, click **Create Internet Gateway**. Fill out the required information and click **Create Internet Gateway**.
-    ![create-internet-gateway](./images/createinternetgateway.png " ")
+    ![create-internet-gateway](./images/create-internetgateway.png " ")
 
   **Create a Route Table:**
 
