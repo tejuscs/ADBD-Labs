@@ -68,8 +68,8 @@ Estimated Time: 20 minutes
           ![create-avmc-pc5a](./images/create-avmc-pc5a.png " ")
 
     6. **Choose the license type** you wish to use.
-            - Bring your own license: If you choose this option, make sure you have proper entitlements to use for new service instances that you create.
-            - License included: With this choice, the cost of the cloud service includes a license for the Database service.
+         - Bring your own license: If you choose this option, make sure you have proper entitlements to use for new service instances that you create.
+         - License included: With this choice, the cost of the cloud service includes a license for the Database service.
     
     7. In the advanced options, you may pick a different timezone than the default UTC. You can optionally add a security attribute to control access for your AVMC resource using Zero Trust Packet Routing (ZPR) policies. 
 
@@ -84,7 +84,6 @@ You may now **proceed to the next lab**.
 ## Acknowledgements
 
 - **Author** - Ranganath, S R, Simon Law & Kris Bhanushali
-- **Updated By/Date** - Vandana Rajamani, December 2025
 - **Last Updated By/Date** - Vandana Rajamani, February 2026
 
 ## See an issue or have feedback?
