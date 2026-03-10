@@ -76,7 +76,6 @@ You may now **proceed to the next lab**.
 
 - **Author** - Ranganath S R & Kris Bhanushali
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer
-- **Updated By/Date** - Vandana Rajamani, November 2025
 - **Last Updated By/Date** - Vandana Rajamani, February 2026
 
 ## See an issue or have feedback?  
