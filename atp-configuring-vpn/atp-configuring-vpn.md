@@ -52,21 +52,21 @@ The following illustration shows a network topology that can be used to provide 
     ![This image shows the result of performing the above step.](./images/createcompute3.png " ")
 
 - Image and Shape:
-    - Image: Choose CentOS as the operating system image and select CentOS8 Stream as the image name.
+    - Image: Choose **CentOS** as the operating system image and select CentOS8 Stream as the image name.
     
     ![This image shows the result of performing the above step.](./images/createcompute4.png " ")
 
-   - Shape: Click "Change shape" to select the instance type (e.g., Virtual Machine) and shape series (Intel).
+   - Shape: Click **Change shape** to select the instance type (e.g., Virtual Machine) and shape series (Intel).
 
     ![This image shows the result of performing the above step.](./images/createcompute5.png " ")
 
     ![This image shows the result of performing the above step.](./images/createcompute5a.png " ")
 
-- You can optionally enable **Shielded instances**. 
+- You can optionally enable **Shielded instance**. 
 
     ![This image shows the result of performing the above step.](./images/createcompute6.png " ")
 
-- Networking: Configure the Virtual Cloud Network (VCN) and subnet. Select "Assign a public IPv4 address" if you need internet access to the instance.
+- Networking: Configure the Virtual Cloud Network (VCN) and subnet. Select **Assign a public IPv4 address** if you need internet access to the instance.
     
     ![This image shows the result of performing the above step.](./images/createcompute7.png " ")
 
@@ -118,6 +118,7 @@ From your terminal, connect to the VM using its public IP :
     ![This image shows the result of performing the above step.](./images/install-openvpn-as.png " ")
 
 - Set the OpenVPN admin password
+
     OpenVPN AS uses the Linux user openvpn for initial admin access. Set its password: 
 
     ![This image shows the result of performing the above step.](./images/openvpn-changepwd.png " ")
@@ -126,10 +127,12 @@ From your terminal, connect to the VM using its public IP :
 
 - Sign in to the OpenVPN Admin UI (port 943)
 
--    From your local browser, access the admin UI console of your VPN Server (*https://public_ipAddress_of_your_centOS_VM:943/admin*), using the password for OpenVPN user.
+    From your local browser, access the admin UI console of your VPN Server (*https://public_ipAddress_of_your_centOS_VM:943/admin*), using the password for OpenVPN user.
+
     ![This image shows the result of performing the above step.](./images/openvpn-login.png " ")
 
 -   Once you are logged in, click **Network Settings** and replace the **Hostname** or **IP address** with the public IP of the OpenVPN Server Instance.
+
     ![This image shows the result of performing the above step.](./images/openvpn-network.png " ")
 
     Save your setting before advancing to the VPN settings page.
@@ -139,32 +142,38 @@ From your terminal, connect to the VM using its public IP :
     Here you configure how traffic from your VPN client (that is, your personal laptop for example) should be NATed and how DNS resolution should occur.
 
     Configure this section as shown in the screenshot below.
+
     - Choose **Yes using NAT**.
     - Provide CIDR ranges for your application and exadata subnets.
     - Pick **No** for the question - **Should client internet traffic be routed through the VPN?**
-        ![This image shows the result of performing the above step.](./images/vpn-nat.png " ")
+
+      ![This image shows the result of performing the above step.](./images/vpn-nat.png " ")
 
     Scroll down and configure the DNS settings as shown below.
-        ![This image shows the result of performing the above step.](./images/vpn-routing2.png " ")
+
+      ![This image shows the result of performing the above step.](./images/vpn-routing2.png " ")
 
 -   In the **Advanced VPN** section, ensure that the option **Should clients be able to communicate with each other on the VPN IP Network?** is set to **Yes**.
-    ![This image shows the result of performing the above step.](./images/openvpn-advancedvpn.png " ")
+
+      ![This image shows the result of performing the above step.](./images/openvpn-advancedvpn.png " ")
 
     **Note:** Once you have applied your changes, click **Save Settings** once again. Then, **Update Running Server** to push your new configuration to the OpenVPN server.
 
 ## Task 3: Install OpenVPN Client
 
 -   Launch your OpenVPN Access Server Client UI at https://Your\_VPN\_Server\_Public\_IP:943 and download the OpenVPN client for your platforms.
+
     ![This image shows the result of performing the above step.](./images/openvpn-client.png " ")
 
 -   Once the installation process has completed, you can see an OpenVPN icon in your OS taskbar. Right-click this icon to bring up the context menu to start your OpenVPN connection.
-    ![This image shows the result of performing the above step.](./images/openvpn-conn.png " ")
-    ![This image shows the result of performing the above step.](./images/openvpn-client-conn.png " ")
+
+    ![This image shows the result of performing the above step.](./images/openvpn-clientwindow.png " ")
 
     **Note:** IP should be Public IP for OpenVPN Compute Instance.
 
 -   Click **Connect**, which brings up a window asking for the OpenVPN username and password. Enter the credentials for your **openvpn** user and click **Connect** to establish a VPN tunnel.
-    ![This image shows the result of performing the above step.](./images/openvpn-clientwindow.png " ")
+
+    ![This image shows the result of performing the above step.](./images/openvpn-connected.png " ")
 
 You may also set up your VPN server with multiple users. Follow the OpenVPN configuration guide to set up additional users.
 
@@ -174,11 +183,13 @@ You may also set up your VPN server with multiple users. Follow the OpenVPN conf
 - Launch SQL Developer and connect using the downloaded credentials wallet as shown below.
 
     **Note:** Your SQL Developer version needs to be 18.3 or higher to connect to a cloud database using a wallet.
+
     ![This image shows the result of performing the above step.](./images/atpd-conn.png " ")
 
 - To follow detailed instructions on downloading your database credentials wallet, refer to the lab **Configure a Development System** in the workshop **Introduction to ADB Dedicated for Developers and Database Users.**
 
 - You may also connect to APEX directly from your local browser. Simply get the URL from the console and launch in a browser window.
+
     ![This image shows the result of performing the above step.](./images/atpd-application-apex.png " ")
 
 You may now **proceed to the next lab**.
