@@ -79,7 +79,7 @@ As a fleet administrator:
 
    ![This image shows the result of performing the above step.](./images/create-acd7.png " ")
 
-That's it. Simply scroll down to the bottom and click the blue **Create Autonomous Container Database** button to deploy your ACD.
+That's it. Simply scroll down to the bottom and click **Create Autonomous Container Database** to deploy your ACD.
 
 You may now **proceed to the next lab**.
 
@@ -88,7 +88,6 @@ You may now **proceed to the next lab**.
 *All Done! You have successfully deployed your Autonomous Container Database and it should be available shortly.*
 
 - **Author** - Ranganath S R, Tejus S. & Kris Bhanushali
-- **Updated By/Date** - Vandana Rajamani, December 2025
 - **Last Updated By/Date** - Vandana Rajamani, December 2025
 
 ## See an issue or have feedback?
