@@ -36,7 +36,7 @@ The following illustration shows a network topology that can be used to provide 
 
 ## Task 1: Launch a CentOS VM for the OpenVPN server
 
-- Log in to the Oracle Cloud Infrastructure using your tenancy, userId and password. Once logged in, Click **Compute** and then click **Instances**.
+- Log in to the OCI using your tenancy, userId and password. Once logged in, Click **Compute** and then click **Instances**.
 
     ![This image shows the result of performing the above step.](./images/createcompute1.png " ")
 
